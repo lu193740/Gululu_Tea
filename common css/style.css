@@ -1,0 +1,329 @@
+@import url('reset.css');
+
+body{
+    font-family: verdana;
+    line-height: 1.6;
+    background-color: rgb(249, 249, 249);
+    color: rgb(32, 30, 30);
+}
+
+.top a img{ 
+    margin-left: 30px;
+}
+
+.block-1{
+    /*border: 1px solid green;*/
+    float:right;
+    margin: 25px 50px;
+    list-style-type:none;
+}
+
+.block-1 li{
+    /* border: 1px solid red; */
+    float:left;
+    padding-right: 30px;;
+    font-size:18px ;
+}
+
+.block-1 a{
+    text-decoration: none;
+}
+
+.block-1 a:hover{
+    font-size: 20px;
+    /* text-decoration: none; */
+    background-color: rgb(231, 255, 97);
+    color:black;
+} 
+
+/* 大圖輪播區塊*/
+
+.banner img{
+    /* border:1px solid rgb(0, 0, 0); */
+    width:100%;
+    height:650px;
+}
+
+/* 標題文字區要寫上(天然、甘醇、鮮美Enjoy . Genuine . Delicious) */
+.section1{
+    /* border:1px solid red; */
+    color:green;
+    margin:100px 0;
+}
+
+.container{
+    /* border:1px solid orange; */
+    text-align: center;
+    font-size: 24px;
+    color:yellowgreen;
+}
+
+.subtitle{
+    color:rgb(171, 210, 93);
+    font-size:20px; 
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* 區塊／消息區／最新消息區 */
+.section2 .title-region{
+    /* border:1px solid red; */
+    height:80px;
+    font-size: 22px;
+    color:black;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 60px;
+    border-bottom:1px solid #c9c9c9
+}
+
+.section2 .title-region img{
+    width:15px;
+    height:15px;
+    padding-left: 10px;
+}
+
+.section2 .title-region a{
+    text-decoration: none;
+    display:flex;
+}
+
+.inforegion .info-item a{
+    text-decoration: none;
+    color:blue;
+    display:flex;
+    align-items: center;
+    margin:0 60px;
+    padding-left:60px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.inforegion .info-item .date{
+    /* border:1px solid red; */
+    width:130px;
+    padding:15px 0;
+    color:#999999;
+}
+
+.inforegion .info-item .type{
+    /* border:1px solid red; */
+    width:130px;
+    padding:15px 0;
+    color:#999999;
+}
+
+.inforegion .info-item .text{
+    padding:15px 0 15px 25px;
+    color:black;
+    font-size: 18px;
+}
+
+/* 區塊/圖片導引(banner) */
+
+.section3{
+    /* border: 1px solid green; */
+    margin: 100px 10px 100px 50px;
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+.test{
+    width:600px;
+    height:450px;
+    /* flex-grow: 1; */
+} 
+
+.section3 .test a{
+    text-decoration:none;
+}
+
+.banner1{
+    /* border:1px solid green; */
+    background-image: url(file:///C:/Users/Tibame_T14/Desktop/Gululu%20Tea%20html/img/index%20page/20210421006131.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 460px;
+    width:600px ;
+    height:460px;
+}
+
+.banner1 .text{
+    /* border:1px solid rgb(0, 0, 0); */
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    padding-top:400px;
+    padding-left: 10px;
+    color: white;
+}
+
+.test2{
+    /* border:1px solid orange; */
+    display: flex;
+    flex-wrap: wrap; 
+    width:650px;
+    padding-left: 0px;
+    /* flex-grow: 1; */
+}
+
+.section3 .test2 a{
+    text-decoration:none;
+}
+
+.banner2{
+    /* border:1px solid blue; */
+    background-image: url(file:///C:/Users/Tibame_T14/Desktop/Gululu%20Tea%20html/img/index%20page/taiwan-milk-tea-with-bubble_1339-934301838340.jpeg);
+    background-repeat: no-repeat;
+    background-size: 290px 225px;
+    margin:0 5px 10px 10px;
+    width:290px;
+    height:225px;
+}
+
+.banner2 .text{
+    /* border:1px solid red; */
+    font-size: 24px;
+    font-weight: 700;
+    padding-top:180px;
+    padding-left:10px;
+    color:white
+}
+
+.banner3{
+    /* border:1px solid red; */
+    background-image: url(file:///C:/Users/Tibame_T14/Desktop/Gululu%20Tea%20html/img/index%20page/20200609004676.jpg);
+    margin:0 10px 10px 5px;
+    background-repeat: no-repeat;
+    background-size: 290px 225px;
+    width:290px;
+    height:225px;
+    object-fit:cover;
+}
+
+.banner3 .text{
+    /* border:1px solid red; */
+    font-size: 24px;
+    font-weight:700;
+    padding-top:180px;
+    padding-left:10px;
+    color:white;
+}
+
+.banner4{
+    /* border:1px solid red; */
+    background-image: url(file:///C:/Users/Tibame_T14/Desktop/Gululu%20Tea%20html/img/brand%20story/tea-picker-woman-s-asian-hands-close-up-pretty-tea-picking-girl-plantation.jpg);
+    background-repeat: no-repeat;
+    background-size: 290px 225px;
+    margin:0 5px 10px 10px;
+    width:290px;
+    height:225px;
+}
+
+.banner4 .text{
+    /* border:1px solid red; */
+    font-size: 24px;
+    font-weight:700;
+    padding-top: 180px;
+    padding-left:10px;
+    color:white;
+}
+
+.banner5{
+    /* border:1px solid red; */
+    background-image: url(file:///C:/Users/Tibame_T14/Desktop/Gululu%20Tea%20html/img/contact%20us/Contact-us.jpg);
+    background-repeat: no-repeat;
+    background-size: 290px 225px;
+    margin:0 10px 10px 5px;
+    width:290px;
+    height:225px;
+}
+
+.banner5 .text{
+    font-size: 24px;
+    font-weight:700;
+    padding-top: 180px;
+    padding-left:10px;
+    color:white;
+}
+
+/* footer頁尾區塊 */
+ .footer-region{
+    /* border:1px solid blue; */
+    width:100%;
+    display: flex;
+    padding: 20px 10px;
+    background-color: #dbdbdb;
+}
+
+.footer-region .logo-box img{
+    /* border: 1px solid red; */
+    width:150px;
+    margin-left: 45px;
+    margin-right: 150px;
+}
+
+.footer-region .comtact-region .title{
+    /* border:1px solid red; */
+    font-size: 18px;
+    font-weight: 500;
+    color:black;
+}
+
+.footer-region .comtact-region li{
+    /* border: 1px solid blue; */
+    font-size: 14px;
+    margin-right: 180px;
+    line-height: 2.3;
+}
+
+.footer-region .shear-region .icon-slogan{
+    /* border:1px solid red; */
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer-region .shear-region ul{
+    /* border:1px solid red; */
+    display: flex;
+}
+
+.footer-region .shear-region img{
+    /* border:1px solid red; */
+    width:50px;
+    height:50px;
+    margin-top: 10px;
+    padding-right:15px;
+}
+
+.copyright-region{
+    background-color: #dbdbdb;
+    padding-left: 55px;
+    color:#999999; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* div{ */
+    /* border:1px solid blue; */
+/* } */

@@ -1,0 +1,153 @@
+@import url('reset.css');
+
+body{
+    font-family: verdana;
+    line-height: 1.6;
+    background-color: rgb(249, 249, 249);
+    color: rgb(32, 30, 30);
+}
+
+.section1{
+    /* border:1px solid red; */
+    margin-left:130px;
+}
+
+.container .title-region{
+    /* border:1px solid red; */
+    font-size: 30px;
+    display: flex;
+    align-items: center; 
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    /* padding-left:125px; */
+}
+
+.title-region .subtitle{
+    font-size: 20px;
+    padding-top:10px;
+    padding-left:10px;
+    color:rgb(42, 212, 0);
+}
+
+.form-region{
+    /* border: 1px solid red; */
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin-right: 100px;
+    margin-left: 128px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.form-region .purpose1{
+    /* border: 1px solid red; */
+    margin-right: 25px;
+    font-size: 18px;
+}
+
+.form-region .purpose2{
+    /* border:1px solid red; */
+    width:227px;
+    height:40px;
+    margin-right:550px;
+    margin-bottom: 20px;
+    /* box-shadow: inset 1px 1px 0px rgb(0 0 0 / 35%); */
+
+}
+
+.form-region .block1{
+    /* border:1px solid red; */
+}
+
+.form-region .name1{
+    /* border:1px solid red; */
+    font-size: 18px;
+    margin-right: 61px;
+}
+
+.form-region .name2{
+    /* border:1px solid red; */
+    width:220px;
+    height:40px;
+    margin-right:80px;
+    /* box-shadow: inset 1px 1px 0px rgb(0 0 0 / 35%); */
+}
+
+.form-region .mail-1{
+    /* border:1px solid red; */
+    font-size: 18px;
+    margin-right: 61px;
+}
+
+.form-region .mail-2{
+    /* border:1px solid red; */
+    width:220px;
+    height:40px;
+    margin-right:100px;
+    margin-bottom: 20px;
+    /* box-shadow: inset 1px 1px 0px rgb(0 0 0 / 35%); */
+}
+
+.form-region .subject1{
+    /* border:1px solid red; */
+    font-size: 18px;
+    margin-right: 25px;
+}
+
+.form-region .subject2{
+    /* border:1px solid red; */
+    width:667px;
+    height:40px;
+    /* box-shadow: inset 1px 1px 0px rgb(0 0 0 / 35%); */
+    margin-bottom: 20px;
+}
+
+.form-region .detail{
+    /* border:1px solid red; */
+    display:flex;
+    margin-bottom: 20px;
+    /* width: 680px; */
+}
+
+.form-region .detail-1{
+    /* border:1px solid red; */
+    font-size: 18px;
+    margin-right: 66px;
+    height:50px;
+    /* vertical-align: top; */
+}
+
+.form-region .detail-2{
+    /* border:1px solid red; */
+    width:668px;
+    height:120px;
+    resize: none;
+    /* box-shadow: inset 1px 1px 0px rgb(0 0 0 / 35%); */
+    /* margin-bottom: */
+}
+
+.form-region .submit-btn{
+    /* border:1px solid red; */
+    width:230px;
+    height:40px;
+    background-color: rgb(202, 226, 47);
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s linear;
+    margin-left:556px;
+    margin-bottom: 20px;
+}
+
+.form-region .submit-btn:hover{
+    background-color: rgb(44, 44, 44);
+    color: #fff;
+}
+
+
+
+
+vertical-align: top;

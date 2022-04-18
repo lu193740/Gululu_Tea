@@ -1,0 +1,256 @@
+@import url('reset.css');
+
+body{
+    font-family: verdana;
+    line-height: 1.6;
+    background-color: rgb(249, 249, 249);
+    color: rgb(32, 30, 30);
+}
+
+/* .banner img{ */
+    /* border:1px solid red; */
+    /* width:100%; */
+    /* height:300px; */
+/* }  */
+
+.section1{
+    /* border:1px solid red; */
+    margin-left:100px;
+}
+
+.container .title-region{
+    /* border:1px solid red; */
+    font-size: 30px;
+    display: flex;
+    align-items: center; 
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    margin-bottom: 30px;
+    /* padding-left:125px; */
+}
+
+.title-region .subtitle{
+    font-size: 20px;
+    padding-top:10px;
+    padding-left:10px;
+    color:rgb(42, 212, 0);
+}
+
+/* 菜單區塊一 */
+.tea-list1{
+    /* border:1px solid red; */
+    font-size: 26px;
+}
+
+.tea-list1 .product-list1{
+    /* border:1px solid red; */
+    width:180px;
+    margin-left:155px;
+    margin-bottom:25px;
+    text-align: center;
+    background-color: rgb(133, 243, 60);
+}
+
+.tea-list1 .banner1{
+    /* border:1px solid red; */
+    margin-left:267px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.tea-list1 .banner2{
+    /* border:1px solid red; */
+    margin-left:267px;
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.tea-list1 .product1{
+    /* border:1px solid red; */
+    width:230px;
+    height:250px;
+    margin-left: 70px;
+    margin-bottom:10px;
+    border-radius: 10px;
+    background-color: rgb(196, 196, 196);
+    box-shadow: 2px 2px 2px 2px rgb(104, 100, 100);
+}
+
+.tea-list1 .product1 a{
+    text-decoration: none;
+}
+
+.tea-list1 .product1 img{
+    /* border:1px solid red; */
+    width:229px;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.tea-list1 .product1 .title1{
+    font-size: 22px;
+    font-weight: 600px;
+    
+}
+
+.tea-list1 .product1 .paragraph1{
+    font-size: 18px;
+}
+
+.tea-list1 .product1 .shop-btn{
+    /* border: 1px solid rgb(0, 0, 0); */
+    background-color: rgb(115, 255, 94);
+    width:75px;
+    height:30px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    left:135px;
+    bottom:35px;
+}
+
+/* 菜單區塊二 */
+.tea-list2{
+    /* border:1px solid red; */
+    font-size: 26px;
+}
+
+.tea-list2 .product-list2{
+    /* border:1px solid red; */
+    width:180px;
+    margin-left:155px;
+    margin-bottom:25px;
+    text-align: center;
+    background-color: rgb(133, 243, 60);
+}
+
+
+.tea-list2 .banner3{
+    /* border:1px solid red; */
+    margin-left:267px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.tea-list2 .banner4{
+    /* border:1px solid red; */
+    margin-left:267px;
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.tea-list2 .product1{
+    /* border:1px solid red; */
+    width:230px;
+    height:250px;
+    margin-left: 70px;
+    margin-bottom:10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(104, 100, 100);
+    background-color: rgb(196, 196, 196);
+}
+
+.tea-list2 .product1 a{
+    text-decoration: none;
+}
+
+.tea-list2 .product1 img{
+    /* border:1px solid red; */
+    width:229px;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.tea-list2 .product1 .title1{
+    font-size: 22px;
+    font-weight: 600px;
+}
+
+.tea-list2 .product1 .paragraph1{
+    font-size: 18px;
+}
+
+.tea-list2 .product1 .shop-btn{
+    /* border: 1px solid rgb(0, 0, 0); */
+    background-color: rgb(115, 255, 94);
+    width:75px;
+    height:30px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    left:135px;
+    bottom:35px;
+}
+
+/* 菜單區塊三 */
+.tea-list3{
+    /* border:1px solid red; */
+    font-size: 26px;
+}
+
+.tea-list3 .product-list3{
+    /* border:1px solid red; */
+    width:180px;
+    margin-left:155px;
+    margin-bottom:25px;
+    text-align: center;
+    background-color: rgb(133, 243, 60);
+}
+
+.tea-list3 .banner5{
+    /* border:1px solid red; */
+    margin-left:267px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.tea-list3 .banner6{
+    /* border:1px solid red; */
+    margin-left:267px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.tea-list3 .product1{
+    /* border:1px solid red; */
+    width:230px;
+    height:250px;
+    margin-left: 70px;
+    margin-bottom:10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(104, 100, 100);
+    background-color: rgb(196, 196, 196);
+}
+
+.tea-list3 .product1 a{
+    text-decoration: none;
+}
+
+.tea-list3 .product1 img{
+    /* border:1px solid red; */
+    width:229px;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.tea-list3 .product1 .title1{
+    font-size: 22px;
+    font-weight: 600px;
+}
+
+.tea-list3 .product1 .paragraph1{
+    font-size: 18px;
+}
+
+.tea-list3 .product1 .shop-btn{
+    /* border: 1px solid rgb(0, 0, 0); */
+    background-color: rgb(115, 255, 94);
+    width:75px;
+    height:30px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    left:135px;
+    bottom:35px;
+}

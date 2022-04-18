@@ -1,0 +1,158 @@
+@import url('reset.css');
+
+body{
+    font-family: verdana;
+    line-height: 1.6;
+    background-color: rgb(249, 249, 249);
+    color: rgb(32, 30, 30);
+}
+
+.section1{
+    /* border:1px solid red; */
+    margin-left:130px;
+}
+
+.container .title-region{
+    /* border:1px solid red; */
+    font-size: 30px;
+    display: flex;
+    align-items: center; 
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+    /* padding-left:125px; */
+
+.title-region .subtitle{
+    font-size: 20px;
+    padding-top:10px;
+    padding-left:10px;
+    color:rgb(42, 212, 0);
+}
+
+.main{
+    /* border:1px solid red; */
+    width:1000px;
+    margin: 0 auto;
+}
+
+.block1{
+    /* border:1px solid red; */
+    display: flex;
+    padding-bottom: 1px;
+}
+
+.block1 .item1 {}
+
+.block1 .item1 a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.block1 .item1 img{
+    /* border:1px solid red; */
+    width:490px;
+    height:400px;
+    margin-top:20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.block1 .item1 .paragraph1{
+    /* border:1px solid red; */
+    position: relative;
+    background-color: rgb(221, 222, 223);
+    bottom:28px;
+    font-size: 20px;
+    margin-right:10px;
+}
+
+.block1 .item2{}
+
+.block1 .item2 a{
+    text-decoration: none;
+    text-align: center;
+    color:black;
+}
+
+.block1 .item2 img{
+    /* border:1px solid red; */
+    width:490px;
+    height:400px;
+    margin-top:20px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 6px;
+}
+
+.block1 .item2 .paragraph2{
+    /* border:1px solid red; */
+    position: relative;
+    bottom:28px;
+    background-color: rgb(221, 222, 223);
+    font-size: 20px;
+    margin-left:6px;
+}
+
+.block2{
+    /* border:1px solid red; */
+    display: flex;
+    margin-top: 0;
+}
+
+.block2 .item3 a{
+    text-decoration: none;
+    text-align: center;
+    color:black;
+}
+
+.block2 .item3{
+    /* border:1px solid red; */
+}
+
+.block2 .item3 img{
+    /* border:1px solid red; */
+    width:490px;
+    height:400px;
+    margin-top:0;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.block2 .item3 .paragraph3{
+    /* border:1px solid red; */
+    font-size: 20px;
+    background-color: rgb(221, 222, 223);
+    position: relative;
+    bottom:28px;
+    margin-right: 13px;
+}
+
+.block2 .item4{
+}
+
+.block2 .item4 a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.block2 .item4 img{
+    /* border:1px solid red; */
+    width:490px;
+    height:400px;
+    margin-top:0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 6px;
+}
+
+.block2 .item4 .paragraph4{
+    /* border:1px solid red; */
+    color: rgb(0, 0, 0);
+    background-color: rgb(221, 222, 223);
+    font-size: 20px;
+    position: relative;
+    bottom:28px;
+    margin-left: 6px;
+}
