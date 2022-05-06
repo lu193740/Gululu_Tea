@@ -1,0 +1,252 @@
+@import url('reset.css');
+
+body{
+    font-family: verdana;
+    line-height: 1.6;
+    background-color: rgb(249, 249, 249);
+    color: rgb(32, 30, 30);
+}
+
+.wrapper{
+    margin:0 auto;
+    width:1200px;
+}
+
+.section1{
+    /* border:1px solid red; */
+    margin-left:130px;
+}
+
+.container .title-region{
+    /* border:1px solid red; */
+    font-size: 30px;
+    display: flex;
+    align-items: center; 
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    /* padding-left:125px; */
+}
+
+.title-region .subtitle{
+    font-size: 20px;
+    padding-top:10px;
+    padding-left:10px;
+    color:rgb(42, 212, 0);
+}
+
+.form-region{
+    /* border: 1px solid red; */
+    background-color: rgb(249, 249, 249);;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin-right: 100px;
+    margin-left: 128px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+    
+.form-region .block1{
+    /* border:3px solid rgb(185, 185, 185); */
+    background-color: rgb(225, 225, 225);
+    width:358px;
+    margin-left:245px;
+    padding-left:125px;
+    padding-top:15px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.form-region .mail-1{
+    /* border:1px solid red; */
+    font-size: 18px;
+    margin-right: 21px;
+}
+
+.form-region .mail-2{
+    /* border:1px solid red; */
+    width:220px;
+    height:30px;
+    /* margin-right:80px; */
+    margin-bottom: 20px;
+    /* box-shadow: inset 1px 1px 0px rgb(0 0 0 / 35%); */
+}
+
+.form-region .password-1{
+    /* border:1px solid red; */
+    font-size: 18px;
+    margin-right: 41px;
+}
+
+.form-region .password-2{
+    /* border:1px solid red; */
+    width:220px;
+    height:30px;
+    /* box-shadow: inset 1px 1px 0px rgb(0 0 0 / 35%); */
+    margin-bottom: 20px;
+}
+
+.form-region .password-3{
+    /* border:1px solid red; */
+    font-size: 18px;
+    margin-right: 25px;
+}
+
+.form-region .password-4{
+    /* border:1px solid red; */
+    width:220px;
+    height:30px;
+    /* box-shadow: inset 1px 1px 0px rgb(0 0 0 / 35%); */
+    margin-bottom: 20px;
+}
+
+.form-region .submit-btn{
+    /* border:1px solid red; */
+    width:130px;
+    height:40px;
+    background-color: rgb(162, 250, 99);
+    display: block;
+    /* text-align: center; */
+    cursor: pointer;
+    transition: all .3s linear;
+    margin-left:98px;
+    margin-bottom: 20px;
+    border:none;
+}
+
+.form-region .submit-btn:hover{
+    background-color: rgb(57, 251, 39);
+    color: #fff;
+}
+
+/* 置頂按鈕區塊 */
+.toTop{
+    /* border:1px solid red; */
+	display: block;
+	width: 70px;
+	height: 70px;
+	background-color: rgb(179, 101, 0);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	right: 50px;
+	bottom: 60px;
+	text-decoration: none;
+	border-radius: 50%;
+	font-size: 2em;
+	transition: .3s;
+}
+
+.toTop .fa{
+	transition: .5s;
+}
+
+.toTop:hover{
+	background-color: #333;
+}
+
+.toTop:hover .fa{
+	transform: translateY(-5px);
+}
+
+/* RWD 設計區塊 */
+@media screen and (max-width: 414px){
+    .wrapper{
+      /* border: 1px solid red; */
+      width:auto;
+    }
+
+    .section1{
+        margin-left:0;
+    }
+
+    .container .title-region{
+        /* border:1px solid red; */
+        padding-left:80px;
+    }
+
+    .form-region{
+        /* border:1px solid red; */
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .fa{
+        font-size: 48px;
+    }
+
+    .form-region .block1{
+        /* border:1px solid red; */
+        margin-left:0;
+        width:225px;
+        padding-left: 68px;
+        padding-right:53px;
+    }
+
+    .form-region .submit-btn {
+        /* border: 1px solid red; */
+        width: 227px;
+        height: 40px;
+        background-color: rgb(162, 250, 99);
+        display: block;
+        /* text-align: center; */
+        cursor: pointer;
+        transition: all .3s linear;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        border: none;
+    }
+
+    .toTop {
+        /* border: 1px solid red; */
+        display: block;
+        width: 70px;
+        height: 70px;
+        background-color: rgb(179, 101, 0);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 3px;
+        bottom: 125px;
+        text-decoration: none;
+        border-radius: 50%;
+        font-size: 2em;
+        transition: .3s;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .wrapper{
+        /* border: 1px solid red; */
+        width:auto;
+      }
+
+    .section1{
+        margin-left:0;
+    }
+
+    .container .title-region{
+        /* border:1px solid red; */
+        padding-left:80px;
+    }
+
+    .form-region {
+        /* border: 1px solid red; */
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    .form-region .block1 {
+        /* border: 1px solid red; */
+        margin-left: 11px;
+        width: 225px;
+        padding-left: 68px;
+        padding-right: 53px;
+    }
+    
+}

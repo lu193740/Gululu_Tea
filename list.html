@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gululu Tea 暢飲</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="common css/header footer common.css">
     <link rel="stylesheet" href="common css/list.css">
+    <script src="script.js"></script>
 
     <style>
       .breadcrumb{
@@ -54,21 +57,28 @@
 
 </head>
 <body>
-    
+  <div class="wrapper">
         <!-- header 頁首區塊 -->
         <header>
             <div class="top">
                 <a href="index.html">
                     <img src="img/logo/logo.svg">
                 </a>
+
+                <i class="fa fa-bars" aria-hidden="true" id="ham"></i>
         
                 <ul class="block-1">
-                  <li><a href="brand story.html">關於Gululu</a></li>
+                  <li><a href="brand story.html">關於Gululu Tea</a></li>
                   <li><a href="list.html">店內飲品</a></li>
                   <li><a href="news.html">最新消息</a></li>
                   <li><a href="contact us.html">聯絡我們</a></li>
                   <li><a href="#"><img src="img/icon/ao520-821ka shop csr .svg" alt=""></a></li>
-                  <li><a href="sign up.html"><img src="img/icon/user .svg" alt=""></a></li>
+                  <li><a href="#"><img src="img/icon/user .svg" alt=""></a>
+                    <ol>
+                      <li><a href="sign up.html">新會員註冊</a></li>
+                      <li><a href="Login page.html">會員登錄</a></li>
+                    </ol>
+                  </li>
                 </ul>
             </div>
         </header>
@@ -81,11 +91,6 @@
           </ol>
         </div>
 
-        <!-- 大圖輪播區 -->
-        <!-- <div class="banner"> -->
-          <!-- <img src="img/list/20190611-120134_U10931_M527098_e13b.png" alt=""> -->
-        <!-- </div> -->
-
         <!-- 大標部分 -->
         <div class="section1">
           <div class="container">
@@ -95,6 +100,15 @@
           </div>
         </div>
 
+        <!-- aside 可指定區塊選單 -->
+        <aside class="aside">
+          <ul class="type-list">
+            <li><a href="#" class="scroll-1">原葉鮮醇茶</a></li>
+            <li><a href="#" class="scroll-2">鮮奶特調茶</a></li>
+            <li><a href="#" class="scroll-3">沁涼鮮果茶</a></li>
+          </ul>
+        </aside>
+
         <!-- 菜單區塊 -->
         <div class="product-block">
           <div class="tea-list1">
@@ -102,7 +116,7 @@
             <div class="banner1">
               <div class="product1">
                 <a href="purchase_page.html">
-                  <img src="img/index page/tea-624x407.jpg" alt="">
+                  <img src="img/index/tea-624x407.jpg" alt="">
                   <div class="title1">原鄉四季春</div>
                   <div class="paragraph1">價格:35元</div>
                 </a>
@@ -110,7 +124,7 @@
               </div>
               <div class="product1">
                 <a href="purchase_page.html">
-                  <img src="img/index page/tea-624x407.jpg" alt="">
+                  <img src="img/index/tea-624x407.jpg" alt="">
                   <div class="title1">文山包種茶</div>
                   <div class="paragraph1">價格:35元</div>
                 </a>
@@ -118,17 +132,15 @@
               </div>
               <div class="product1">
                 <a href="purchase_page.html">
-                  <img src="img/index page/tea-624x407.jpg" alt="">
+                  <img src="img/index/tea-624x407.jpg" alt="">
                   <div class="title1">茉香綠茶</div>
                   <div class="paragraph1">價格:35元</div>
                 </a>
                 <div class="shop-btn"><a href="#">立刻購買</a></div>
              </div>
-            </div>
-            <div class="banner2">
               <div class="product1">
                 <a href="purchase_page.html">
-                  <img src="img/index page/tea-624x407.jpg" alt="">
+                  <img src="img/index/tea-624x407.jpg" alt="">
                   <div class="title1">高山烏龍茶</div>
                   <div class="paragraph1">價格:40元</div>
                 </a>
@@ -136,7 +148,7 @@
               </div>
               <div class="product1">
                 <a href="purchase_page.html">
-                  <img src="img/index page/tea-624x407.jpg" alt="">
+                  <img src="img/index/tea-624x407.jpg" alt="">
                   <div class="title1">爽口金萱茶</div>
                   <div class="paragraph1">價格:40元</div>
                 </a>
@@ -144,7 +156,7 @@
               </div>
               <div class="product1">
                 <a href="purchase_page.html">
-                  <img src="img/index page/tea-624x407.jpg" alt="">
+                  <img src="img/index/tea-624x407.jpg" alt="">
                   <div class="title1">斯里蘭卡紅茶</div>
                   <div class="paragraph1">價格:40元</div>
                 </a>
@@ -155,7 +167,7 @@
 
           <div class="tea-list2">
             <div class="product-list2">鮮奶特調茶</div>
-            <div class="banner3">
+            <div class="banner2">
               <div class="product1">
                 <a href="purchase_page - copy1.html">
                   <img src="img/list/9ba109e7-c327-4828-b2d4-4eb973987cb8.jpg" alt="">
@@ -179,10 +191,8 @@
                   <div class="paragraph1">價格:55元</div>
                 </a>
                 <div class="shop-btn"><a href="#">立刻購買</a></div>
-             </div>
-            </div>
-
-            <div class="banner4">
+              </div>
+            
               <div class="product1">
                 <a href="purchase_page - copy1.html">
                   <img src="img/list/9ba109e7-c327-4828-b2d4-4eb973987cb8.jpg" alt="">
@@ -237,9 +247,7 @@
                 </a>
                 <div class="shop-btn"><a href="#">立刻購買</a></div>
               </div>
-            </div>
 
-            <div class="banner6">
               <div class="product1">
                 <a href="purchase_page - copy2.html">
                   <img src="img/list/下載 (1).jpg" alt="">
@@ -268,9 +276,14 @@
           </div>
         </div>
 
+          <!-- 置頂按鈕 -->
+        <a href="#" class="toTop">
+          <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </a>
+  </div>
 
-        <!-- Footer頁尾 -->
-        <footer>
+          <!-- Footer頁尾 -->
+          <footer class="footer">
             <div class="footer-region">
                 <div class="logo-box">
                   <img src="img/logo/資產 6.svg" alt="">
@@ -287,7 +300,7 @@
                     <div class="icon-slogan">我們的社群</div>
                    <ul>
                      <!-- <li class="title">我們的社群</li> -->
-                     <li> <a href="https://zh-tw.facebook.com/"><img src="../Gululu Tea html/img/icon/facebook icon.svg" alt=""> </a></li>
+                     <li> <a href="https://zh-tw.facebook.com/"><img src="img/icon/facebook icon.svg" alt=""> </a></li>
                      <li> <a href="https://www.instagram.com/"><img src="img/icon/IG icon.svg" alt=""></a></li>
                      <li> <a href="https://tw.linkedin.com/"><img src="img/icon/likedin icon.svg" alt=""></a></li>
                    </ul>
@@ -295,10 +308,9 @@
              </div>
              <div class="copyright-region">
                 <div>
-                   <div>Copyright © 2022 Gululu Tea 版權所有. All rights reserved.</div>
+                   <div>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。</div>
                 </div>
              </div>
          </footer>
-    </div>
 </body>
 </html>

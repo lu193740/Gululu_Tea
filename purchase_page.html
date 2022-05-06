@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gululu Tea 暢飲</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <!-- <script src="jquery-3.3.1.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="common css/header footer common.css">
     <link rel="stylesheet" href="common css/purchase_page.css">
+    
+    <script src="script.js"></script>
 
     <style>
-        .breadcrumb{
+        .breadcrumb {
             /* border:1px solid red; */
             background-color: #e9ecef;
             border-radius: 5px;
-            padding:5px 10px;
+            padding: 5px 10px;
         }
 
-        .breadcrumb ol.breadcrumb-list{
+        .breadcrumb ol.breadcrumb-list {
             /* border:1px solid red; */
             list-style: none;
         }
 
-        .breadcrumb ol.breadcrumb-list > li{
+        .breadcrumb ol.breadcrumb-list>li {
             /* border:1px solid red; */
-            display:inline-block;
+            display: inline-block;
             margin-right: 10px;
-            color:gray;
+            color: gray;
         }
 
-        .breadcrumb ol.breadcrumb-list > li::before{
-            content:"/";
-            color:#aaa;
-            margin-right:12px;
+        .breadcrumb ol.breadcrumb-list>li::before {
+            content: "/";
+            color: #aaa;
+            margin-right: 12px;
             /* border:1px solid gray; */
             font-size: 18px;
         }
 
-        .breadcrumb ol.breadcrumb-list > li:first-child::before{
-            content:"";
-            margin-right:0;
+        .breadcrumb ol.breadcrumb-list>li:first-child::before {
+            content: "";
+            margin-right: 0;
         }
 
-        .breadcrumb ol.breadcrumb-list > li > a{
+        .breadcrumb ol.breadcrumb-list>li>a {
             text-decoration: none;
             display: inline-block;
-            color:#007bff;
+            color: #007bff;
         }
 
-        .breadcrumb ol.breadcrumb-list > li > a:hover{
-            color:#0056b3;
+        .breadcrumb ol.breadcrumb-list>li>a:hover {
+            color: #0056b3;
         }
     </style>
 
 </head>
+
 <body>
     <div class="wrapper">
         <!-- header 頁首區塊 -->
@@ -61,14 +68,21 @@
                 <a href="index.html">
                     <img src="img/logo/logo.svg">
                 </a>
-        
+
+                <i class="fa fa-bars" aria-hidden="true" id="ham"></i>
+
                 <ul class="block-1">
-                  <li><a href="brand story.html">關於Gululu</a></li>
-                  <li><a href="list.html">店內飲品</a></li>
-                  <li><a href="news.html">最新消息</a></li>
-                  <li><a href="contact us.html">聯絡我們</a></li>
-                  <li><a href="#"><img src="img/icon/ao520-821ka shop csr .svg" alt=""></a></li>
-                  <li><a href="sign up.html"><img src="img/icon/user .svg" alt=""></a></li>
+                    <li><a href="brand story.html">關於Gululu Tea</a></li>
+                    <li><a href="list.html">店內飲品</a></li>
+                    <li><a href="news.html">最新消息</a></li>
+                    <li><a href="contact us.html">聯絡我們</a></li>
+                    <li><a href="#"><img src="img/icon/ao520-821ka shop csr .svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/icon/user .svg" alt=""></a>
+                        <ol>
+                            <li><a href="sign up.html">新會員註冊</a></li>
+                            <li><a href="Login page.html">會員登錄</a></li>
+                        </ol>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -87,77 +101,97 @@
             <div class="container">
                 <!-- 大標部分 -->
                 <div class="title-region">
-                產品購買<div class="subtitle">Products purchase</div>
-               </div>
+                    產品購買<div class="subtitle">Products purchase</div>
+                </div>
             </div>
         </div>
 
         <div class="section2">
             <div class="product-img">
-                <img src="img/index page/tea-624x407.jpg" alt="">
+                <img src="img/index/tea-624x407.jpg" id="img_zoom">
+                <div id="overlay"></div>
             </div>
             <div class="block1">
-               <div class="product-title">原鄉四季春</div>
-               <div class="product-descript">
-                   <ul>
-                       <li>茶味甘甜，入口芬芳。</li>
-                       <li>鮮而不膩，暢飲爽口。</li>
-                       <li>餘韻繚繞，回甘鮮甜。</li>
-                   </ul>
-               </div>
+                <div class="product-title">原鄉四季春</div>
+                <div class="product-descript">
+                    <ul>
+                        <li>茶味甘甜，入口芬芳。</li>
+                        <li>鮮而不膩，暢飲爽口。</li>
+                        <li>餘韻繚繞，回甘鮮甜。</li>
+                    </ul>
+                </div>
 
-               <div class="price-block">
-                   <div class="price1">售價:40元</div>
-                   <div class="price2">售價:35元</div>
-               </div>
+                <div class="price-block">
+                    <div class="price1">售價:40元</div>
+                    <div class="price2">售價:35元</div>
+                </div>
 
-               <div class="form">
-                   <form action="#" method="post" name="#">
-                       <div class="item1">
-                           <label for="" class="number1">購買數量:</label>
-                           <input type="number" class="number2" value="1" min="1">
-                       </div>
-                       <div class="item2">
-                           <button type="submit" class="btn1">加入購物車</button>
-                           <button type="submit" class="btn2">購買</button>
-                       </div>
-                   </form>
-               </div>
+                <div class="form">
+                    <form action="#" method="post" name="#">
+                        <div class="item-temperature">
+                            <label for="">溫度:</label>
+                            <label for="正常"><input type="radio" name="temperature" id="正常">正常</label>
+                            <label for="去冰"><input type="radio" name="temperature" id="去冰">去冰</label>
+                            <label for="常溫"><input type="radio" name="temperature" id="常溫">常溫</label>
+                            <label for="熱"><input type="radio" name="temperature" id="熱">熱</label>
+                        </div>
+                        <div class="item-sweetness">
+                            <label for="">甜度:</label>
+                            <label for="無糖"><input type="radio" name="Sweetness Level" id="無糖">無糖</label>
+                            <label for="微糖"><input type="radio" name="Sweetness Level" id="微糖">微糖</label>
+                            <label for="半糖"><input type="radio" name="Sweetness Level" id="半糖">半糖</label>
+                            <label for="全糖"><input type="radio" name="Sweetness Level" id="全糖">全糖</label>
+                        </div>
+                        <div class="item1">
+                            <label for="" class="number1">購買數量:</label>
+                            <input type="number" class="number2" value="1" min="1">
+                        </div>
+                        <div class="item2">
+                            <button type="submit" class="btn1">加入購物車</button>
+                            <button type="submit" class="btn2">購買</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
 
-
-
-        <!-- footer 頁尾區塊 -->
-        <footer>
-            <div class="footer-region">
-                <div class="logo-box">
-                  <img src="img/logo/資產 6.svg" alt="">
-                </div>
-                <div class="comtact-region">
-                    <div class="title">總公司</div>
-                     <ul>
-                       <li>地址: 新北市新店區北新路16號1樓</li>
-                       <li>電話: 02-8873-1168  (周一~周六 09:00-18:00)</li>
-                       <li>Mail: wellcome@gululu.com</li>
-                     </ul>
-                </div>
-                <div class="shear-region">
-                    <div class="icon-slogan">我們的社群</div>
-                   <ul>
-                     <!-- <li class="title">我們的社群</li> -->
-                     <li> <a href="https://zh-tw.facebook.com/"><img src="../Gululu Tea html/img/icon/facebook icon.svg" alt=""> </a></li>
-                     <li> <a href="https://www.instagram.com/"><img src="img/icon/IG icon.svg" alt=""></a></li>
-                     <li> <a href="https://tw.linkedin.com/"><img src="img/icon/likedin icon.svg" alt=""></a></li>
-                   </ul>
-                </div>
-         </div>
-         <div class="copyright-region">
-             <div>
-                 <div>Copyright © 2022 Gululu Tea 版權所有. All rights reserved.</div>
-             </div>
-         </div>
-        </footer>
+        <!-- 置頂按鈕 -->
+        <a href="#" class="toTop">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </a>
     </div>
+
+    <!-- footer 頁尾區塊 -->
+    <footer class="footer">
+        <div class="footer-region">
+            <div class="logo-box">
+                <img src="img/logo/資產 6.svg" alt="">
+            </div>
+            <div class="comtact-region">
+                <div class="title">總公司</div>
+                <ul>
+                    <li>地址: 新北市新店區北新路16號1樓</li>
+                    <li>電話: 02-8873-1168 (周一~周六 09:00-18:00)</li>
+                    <li>Mail: wellcome@gululu.com</li>
+                </ul>
+            </div>
+            <div class="shear-region">
+                <div class="icon-slogan">我們的社群</div>
+                <ul>
+                    <!-- <li class="title">我們的社群</li> -->
+                    <li> <a href="https://zh-tw.facebook.com/"><img src="img/icon/facebook icon.svg" alt=""> </a></li>
+                    <li> <a href="https://www.instagram.com/"><img src="img/icon/IG icon.svg" alt=""></a></li>
+                    <li> <a href="https://tw.linkedin.com/"><img src="img/icon/likedin icon.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-region">
+            <div>
+                <div>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。</div>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>

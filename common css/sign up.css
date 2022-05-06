@@ -7,6 +7,11 @@ body{
     color: rgb(32, 30, 30);
 }
 
+.wrapper{
+    margin:0 auto;
+    width:1200px;
+}
+
 .section1{
     /* border:1px solid red; */
     margin-left:130px;
@@ -31,7 +36,7 @@ body{
 
 .form-region{
     /* border: 1px solid red; */
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(249, 249, 249);
     display: flex;
     flex-wrap: wrap;
     padding-top: 20px;
@@ -42,10 +47,12 @@ body{
 }
 
 .form-region .block1{
-    border:3px solid rgb(20, 216, 2);
-    background-color: rgb(142, 239, 32);
+    /* border:3px solid rgb(185, 185, 185); */
+    background-color: rgb(225, 225, 225);
     width:358px;
-    margin-left:325px;
+    margin-left:245px;
+    padding-top:15px;
+    padding-bottom: 1px;
     padding-left:125px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -113,9 +120,9 @@ body{
     /* border:1px solid red; */
     width:130px;
     height:40px;
-    background-color: rgb(202, 226, 47);
+    background-color: rgb(162, 250, 99);
     display: block;
-    /* text-align: center; */
+    border:none;
     cursor: pointer;
     transition: all .3s linear;
     margin-left:98px;
@@ -123,6 +130,117 @@ body{
 }
 
 .form-region .submit-btn:hover{
-    background-color: rgb(15, 177, 0);
+    background-color: rgb(57, 251, 39);
     color: #fff;
+}
+
+/* 置頂按鈕區塊 */
+.toTop{
+    /* border:1px solid red; */
+	display: block;
+	width: 70px;
+	height: 70px;
+	background-color: rgb(179, 101, 0);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	right: 50px;
+	bottom: 60px;
+	text-decoration: none;
+	border-radius: 50%;
+	font-size: 2em;
+	transition: .3s;
+}
+
+.toTop .fa{
+	transition: .5s;
+}
+
+.toTop:hover{
+	background-color: #333;
+}
+
+.toTop:hover .fa{
+	transform: translateY(-5px);
+}
+
+/* RWD撰寫區塊 */
+@media screen and (max-width: 414px) {
+    .wrapper{
+        width:auto;
+    }
+
+    .section1{
+        margin-left:0;
+    }
+
+    .container .title-region{
+        /* border:1px solid red; */
+        padding-left:80px;
+    }
+
+    .form-region{
+        /* border:1px solid red; */
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .form-region .block1{
+        /* border:1px solid red; */
+        margin-left:0;
+        width:225px;
+        padding-left: 68px;
+        padding-right:53px;
+    }
+
+    .form-region .submit-btn {
+        /* border: 1px solid red; */
+        width: 229px;
+        height: 40px;
+        background-color: rgb(162, 250, 99);
+        display: block;
+        border: none;
+        cursor: pointer;
+        transition: all .3s linear;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .toTop {
+        /* border: 1px solid red; */
+        display: block;
+        width: 70px;
+        height: 70px;
+        background-color: rgb(179, 101, 0);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 3px;
+        bottom: 125px;
+        text-decoration: none;
+        border-radius: 50%;
+        font-size: 2em;
+        transition: .3s;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .wrapper{
+        /* border: 1px solid red; */
+        width:auto;
+      }
+
+    .section1{
+        margin-left:0;
+    }
+
+    .container .title-region{
+        /* border:1px solid red; */
+        padding-left:80px;
+    }
+
 }

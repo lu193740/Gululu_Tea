@@ -7,9 +7,14 @@ body{
     color: rgb(32, 30, 30);
 }
 
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .section1{
     /* border:1px solid red; */
-    margin-left:130px;
+    margin-left:75px;
 }
 
 .container .title-region{
@@ -61,12 +66,12 @@ body{
     width:450px;
     height:300px;
     margin-right:35px;
-    margin-left: 210px;
+    margin-left: 113px;
 }
 
 .container .banner1 .paragraph3{
     /* border:1px solid red; */
-    text-align: center;
+    text-align: left;
     padding-top:100px;
     font-size: 18px;
     margin-right: 100px;
@@ -102,11 +107,11 @@ body{
     /* border:1px solid red; */
     width:450px;
     height:300px;
-    margin-right: 165px;
+    margin-right: 112px;
 }
 
 .container .banner2 .block1{
-    text-align: center;
+    text-align: left;
     padding-top:50px;
     font-size: 18px;
     margin-right: 20px;
@@ -116,6 +121,7 @@ body{
     /* border:1px solid red; */
     font-size: 24px;
     font-weight: 600;
+    text-align:center;
 }
 
 .container .banner2 .block1 .paragraph6{
@@ -128,7 +134,7 @@ body{
     background-color: rgb(228, 160, 35);
     height:80px;
     width:0px;
-    margin-left: 660px;
+    margin-left: 560px;
     margin-top:30px;
     margin-bottom:30px;
 }
@@ -142,13 +148,13 @@ body{
     /* border:1px solid red; */
     width:450px;
     height:300px;
-    margin-left: 213px;
+    margin-left: 110px;
 }
 
 .container .banner3 .block2{
     /* border:1px solid red; */
     padding-top:50px;
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     margin-left: 20px;
 }
@@ -157,6 +163,7 @@ body{
     /* border:1px solid red; */
     font-size: 24px;
     font-weight: 600;
+    text-align:center;
 }
 
 .container .banner3 .block2 .paragraph7{
@@ -173,7 +180,7 @@ body{
     /* border:1px solid red; */
     width:450px;
     height:300px;
-    margin-left: 26px;
+    margin-right: 110px;
     margin-bottom: 50px;
 }
 
@@ -189,17 +196,217 @@ body{
     /* border:1px solid red; */
     font-size: 24px;
     font-weight: 600;
+    margin-right:100px;
 }
 
 .container .banner4 .block3 .paragraph8{
     /* border:1px solid red; */
-    padding:10px 50px;
+    margin:10px 20px;
+    text-align:left;
+}
+
+/* 置頂按鈕區塊 */
+.toTop{
+    /* border:1px solid red; */
+	display: block;
+	width: 70px;
+	height: 70px;
+	background-color: rgb(179, 101, 0);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	right: 50px;
+	bottom: 60px;
+	text-decoration: none;
+	border-radius: 50%;
+	font-size: 2em;
+	transition: .3s;
+}
+
+.toTop .fa{
+	transition: .5s;
+}
+
+.toTop:hover{
+	background-color: #333;
+}
+
+.toTop:hover .fa{
+	transform: translateY(-5px);
 }
 
 
+/* RWD 撰寫區塊 */
+@media screen and (max-width: 414px){
+    .wrapper{
+        width:auto;
+    }
 
-/* .line-region{
-    border: 2px solid red;
-    background-color: red;
-    width:0px;
-} */
+    .section1{
+        margin-left:0;
+    }
+
+    .container .title-region{
+        /* border:1px solid red; */
+        padding-left:30px;
+        font-size: 29px;
+        display: flex;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+    }
+
+    .solgen-region .paragraph1 {
+        /* border: 1px solid red; */
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        color: rgb(192, 170, 0);
+    }
+
+    .container .banner1 {
+        /* border: 1px solid red; */
+        display: flex;
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+    }
+
+    .container .banner2 .block1 .big-title {
+        /* border: 1px solid red; */
+        font-size: 24px;
+        font-weight: 600;
+        margin-left: 180px;
+    }
+
+    .container .banner1 img {
+        /* border: 1px solid red; */
+        width: 354px;
+        height: auto;
+        margin-right: 24px;
+        margin-left: 22px;
+    }
+
+    .container .banner1 .paragraph3 {
+        /* border: 1px solid red; */
+        text-align: left;
+        padding-top: 30px;
+        font-size: 18px;
+        margin-right: 10px;
+        margin-left: 35px;
+    }
+
+    .solgen-region2 .paragraph5 {
+        /* border: 1px solid red; */
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .container .banner2 {
+        /* border: 1px solid red; */
+        display: inline-block; 
+        width: 390px;
+    }
+
+    .container .banner2 .block1 .big-title {
+        /* border: 1px solid red; */
+        font-size: 24px;
+        font-weight: 600;
+        /* text-align: center; */
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    .container .banner2 .block1 .paragraph6 {
+        /* border: 1px solid red; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 31px;
+        padding-right: 20px;
+    }
+
+    .container .banner2 img {
+        /* border: 1px solid red; */
+        width: 354px;
+        height: auto;
+        margin-right: 0px;
+        margin-left: 14px;
+    }
+
+    .container .line-region{
+        display:none;
+    }
+
+    .container .banner3 {
+        /* border: 1px solid red; */
+         display: inline-block;
+    }
+
+    .container .banner3 img {
+        /* border: 1px solid red; */
+        width: 354px;
+        height: 235px;
+        margin-left: 15px;
+    }
+
+    .container .banner3 .block2 {
+        /* border: 1px solid red; */
+        padding-top: 15px;
+        text-align: left;
+        font-size: 18px;
+        margin-left: 0px;
+    }
+
+    .container .banner4 {
+        /* border: 1px solid red; */
+        display: inline-block; 
+        width: 400px;
+    }
+
+    .container .banner4 .block3 {
+        /* border: 1px solid red; */
+        padding-top: 50px;
+        text-align: center;
+        font-size: 18px;
+        width: 395px;
+        margin-left: 0;
+    }
+
+    .container .banner4 .block3 .big-title3 {
+        /* border: 1px solid red; */
+        font-size: 24px;
+        font-weight: 600;
+        margin-right: 0;
+    }
+
+    .container .banner4 img {
+        /* border: 1px solid red; */
+        width: 375px;
+        height: auto;
+        margin-left: 13px;
+        margin-bottom: 50px;
+        margin-right:0;
+    }
+
+    .container .banner4 .block3 .paragraph8 {
+        /* border: 1px solid red; */
+        margin-left: 70px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin: 10px px;
+        text-align: left;
+    }
+
+    .toTop {
+        right: 5px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .toTop {
+        right: 15px;
+    }
+}

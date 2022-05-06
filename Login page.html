@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gululu Tea 暢飲</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="common css/header footer common.css">
+    <link rel="stylesheet" href="common css/Login.css"> 
+    <script src="script.js"></script>
+
+    <style>
+        .breadcrumb{
+          /* border:1px solid red; */
+          background-color: #e9ecef;
+          border-radius: 5px;
+          padding:5px 10px;
+      }
+
+       .breadcrumb ol.breadcrumb-list{
+          /* border:1px solid red; */
+          list-style: none;
+      }
+
+      .breadcrumb ol.breadcrumb-list > li{
+          /* border:1px solid red; */
+          display:inline-block;
+          margin-right: 10px;
+          color:gray;
+      }
+
+      .breadcrumb ol.breadcrumb-list > li::before{
+          content:"/";
+          color:#aaa;
+          margin-right:12px;
+          /* border:1px solid gray; */
+          font-size: 18px;
+      }
+
+      .breadcrumb ol.breadcrumb-list > li:first-child::before{
+          content:"";
+          margin-right:0;
+      }
+
+      .breadcrumb ol.breadcrumb-list > li > a{
+          text-decoration: none;
+          display: inline-block;
+          color:#007bff;
+      }
+
+      .breadcrumb ol.breadcrumb-list > li > a:hover{
+          color:#0056b3;
+      }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+      <!-- header 頁首區塊 -->
+      <header>
+        <div class="top">
+           <a href="index.html">
+             <img src="img/logo/logo.svg" >
+           </a>
+
+           <i class="fa fa-bars" aria-hidden="true" id="ham"></i>
+
+           <ul class="block-1">
+            <li><a href="brand story.html">關於Gululu Tea</a></li>
+            <li><a href="list.html">店內飲品</a></li>
+            <li><a href="news.html">最新消息</a></li>
+            <li><a href="contact us.html">聯絡我們</a></li>
+            <li><a href="#"><img src="img/icon/ao520-821ka shop csr .svg" alt=""></a></li>
+            <li><a href="#"><img src="img/icon/user .svg" alt=""></a>
+             <ol>
+                 <li><a href="sign up.html">新會員註冊</a></li>
+                 <li><a href="Login page.html">會員登錄</a></li>
+             </ol>
+            </li>
+          </ul>
+        </div>
+      </header>
+        
+
+        <!-- 麵包屑區塊 -->
+
+        <div class="breadcrumb">
+          <ol class="breadcrumb-list">
+              <li><a href="index.html">首頁</a></li>
+              <li>會員登錄</li>
+          </ol>
+       </div>
+
+       <div class="section1">
+          <div class="container">
+            <div class="title-region">
+             會員登錄<div class="subtitle">Login</div>
+            </div>
+          </div>
+       </div>
+
+       <!-- Form -->
+       <div class="form-region">
+           <form action="#" method="post" name="#">
+            <div class="block1">
+               <!-- 輸入信箱做登錄 -->
+               <label for="Login" class="mail-1">登入</label>
+               <br>
+               <input type="text" name="user_Email" placeholder="請輸入您的E-mail信箱" class="mail-2">
+               <br>
+               <!-- 請輸入密碼 -->
+               <label for="password" class="password-1">密碼:</label>
+               <br>
+               <input type="password" name="password" placeholder="請輸入密碼" class="password-2">
+               <!-- 傳送按鈕 -->
+               <input type="submit" value="資料送出" class="submit-btn">
+            </div>
+           </form>
+       </div>
+        
+
+             <!-- 置頂按鈕 -->
+            <a href="#" class="toTop">
+              <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+            </a>
+    </div>
+    <!-- Footer頁尾 -->
+    <footer class="footer">
+           <div class="footer-region">
+              <div class="logo-box">
+                <img src="img/logo/資產 6.svg" alt="">
+              </div>
+              <div class="comtact-region">
+                <div class="title">總公司</div>
+                    <ul>
+                       <li>地址: 新北市新店區北新路16號1樓</li>
+                       <li>電話: 02-8873-1168  (周一~周六 09:00-18:00)</li>
+                       <li>Mail: wellcome@gululu.com</li>
+                    </ul>
+              </div>
+              <div class="shear-region">
+                <div class="icon-slogan">我們的社群</div>
+                 <ul>
+                   <!-- <li class="title">我們的社群</li> -->
+                   <li> <a href="https://zh-tw.facebook.com/"><img src="img/icon/facebook icon.svg" alt=""> </a></li>
+                   <li> <a href="https://www.instagram.com/"><img src="img/icon/IG icon.svg" alt=""></a></li>
+                   <li> <a href="https://tw.linkedin.com/"><img src="img/icon/likedin icon.svg" alt=""></a></li>
+                 </ul>
+               </div>
+           </div>
+            <div class="copyright-region">
+                <div>
+                   <div>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。</div>
+                </div>
+            </div>
+         </div>
+    </footer>
+</body>
+</html>

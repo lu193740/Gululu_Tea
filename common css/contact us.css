@@ -7,6 +7,11 @@ body{
     color: rgb(32, 30, 30);
 }
 
+.wrapper{
+    margin:0 auto;
+    width:1200px;
+}
+
 .section1{
     /* border:1px solid red; */
     margin-left:130px;
@@ -35,16 +40,17 @@ body{
     display: flex;
     flex-wrap: wrap;
     padding-top: 20px;
+    padding-right:100px;
     margin-right: 100px;
     margin-left: 128px;
     margin-top: 40px;
     margin-bottom: 40px;
-    
 }
 
 .form-region .purpose1{
     /* border: 1px solid red; */
-    margin-right: 25px;
+    margin-right: 18px;
+    margin-left: 50px;
     font-size: 18px;
 }
 
@@ -52,41 +58,42 @@ body{
     /* border:1px solid red; */
     width:227px;
     height:40px;
-    margin-right:550px;
+    margin-right:0;
     margin-bottom: 20px;
     /* box-shadow: inset 1px 1px 0px rgb(0 0 0 / 35%); */
 
 }
 
-.form-region .block1{
+.form-region .block1{ 
     /* border:1px solid red; */
 }
 
 .form-region .name1{
     /* border:1px solid red; */
     font-size: 18px;
-    margin-right: 61px;
+    margin-right: 20px;
+    margin-left: 83px;
 }
 
 .form-region .name2{
     /* border:1px solid red; */
     width:220px;
     height:40px;
-    margin-right:80px;
+    margin-right:40px;
     /* box-shadow: inset 1px 1px 0px rgb(0 0 0 / 35%); */
 }
 
 .form-region .mail-1{
     /* border:1px solid red; */
     font-size: 18px;
-    margin-right: 61px;
+    margin-right: 20px;
 }
 
 .form-region .mail-2{
     /* border:1px solid red; */
     width:220px;
     height:40px;
-    margin-right:100px;
+    margin-right:0;
     margin-bottom: 20px;
     /* box-shadow: inset 1px 1px 0px rgb(0 0 0 / 35%); */
 }
@@ -94,12 +101,13 @@ body{
 .form-region .subject1{
     /* border:1px solid red; */
     font-size: 18px;
-    margin-right: 25px;
+    margin-right: 18px;
+    margin-left:47px;
 }
 
 .form-region .subject2{
     /* border:1px solid red; */
-    width:667px;
+    width:587px;
     height:40px;
     /* box-shadow: inset 1px 1px 0px rgb(0 0 0 / 35%); */
     margin-bottom: 20px;
@@ -115,14 +123,15 @@ body{
 .form-region .detail-1{
     /* border:1px solid red; */
     font-size: 18px;
-    margin-right: 66px;
+    margin-right: 21px;
+    margin-left:85px;
     height:50px;
     /* vertical-align: top; */
 }
 
 .form-region .detail-2{
     /* border:1px solid red; */
-    width:668px;
+    width:593px;
     height:120px;
     resize: none;
     /* box-shadow: inset 1px 1px 0px rgb(0 0 0 / 35%); */
@@ -133,21 +142,191 @@ body{
     /* border:1px solid red; */
     width:230px;
     height:40px;
-    background-color: rgb(202, 226, 47);
+    background-color: rgb(125, 247, 64);
     display: block;
     text-align: center;
     cursor: pointer;
     transition: all .3s linear;
-    margin-left:556px;
+    margin-left:520px;
     margin-bottom: 20px;
+    border:none;
 }
 
 .form-region .submit-btn:hover{
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(94, 252, 46);
     color: #fff;
 }
 
+/* 置頂按鈕區塊 */
+.toTop{
+    /* border:1px solid red; */
+	display: block;
+	width: 70px;
+	height: 70px;
+	background-color: rgb(179, 101, 0);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	right: 50px;
+	bottom: 60px;
+	text-decoration: none;
+	border-radius: 50%;
+	font-size: 2em;
+	transition: .3s;
+}
 
+.toTop .fa{
+	transition: .5s;
+}
 
+.toTop:hover{
+	background-color: #333;
+}
 
-vertical-align: top;
+.toTop:hover .fa{
+	transform: translateY(-5px);
+}
+
+/* RWD撰寫區塊 */
+@media screen and (max-width: 414px){
+    .wrapper{
+        width:auto;
+    }
+
+    .section1{
+        margin-left:0;
+    }
+
+    .container .title-region{
+        /* border:1px solid red; */
+        padding-left:80px;
+    }
+
+    .form-region {
+        /* border: 1px solid red; */
+        background-color: rgb(243, 243, 243);
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-right:100px;
+        margin-right: 10px;
+        margin-left: 11px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .form-region .purpose1 {
+        margin-right: 17px;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .form-region .block1 {
+        /* border: 1px solid red; */
+        height: 133px;
+        width: 341px;
+    }
+
+    .form-region .name1 {
+        /* border: 1px solid red; */
+        font-size: 18px;
+        margin-right: 15px;
+        margin-left: 46px;
+    }
+
+    .form-region .name2 {
+        /* border: 1px solid red; */
+        width: 221px;
+        height: 40px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        /* box-shadow: inset 1px 1px 0px rgb(0 0 0 / 35%); */
+    }
+
+    .form-region .mail-1 {
+        /* border: 1px solid red; */
+        font-size: 18px;
+        margin-right: 14px;
+        margin-left: 25px;
+    }
+
+    .form-region .mail-2 {
+        /* border: 1px solid red; */
+        width: 221px;
+        height: 40px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .form-region .subject1 {
+        /* border: 1px solid red; */
+        font-size: 18px;
+        margin-right: 11px;
+        margin-left: 14px;
+    }
+
+    .form-region .subject2 {
+        /* border: 1px solid red; */
+        width: 224px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .form-region .detail-1 {
+        /* border: 1px solid red; */
+        font-size: 18px;
+        margin-right: 15px;
+        margin-left: 50px;
+        height: 50px;
+    }
+
+    .form-region .detail-2 {
+        /* border: 1px solid red; */
+        width: 229px;
+        height: 120px;
+        resize: none;
+    }
+
+    .form-region .submit-btn {
+        /* border: 1px solid red; */
+        width: 236px;
+        height: 40px;
+        background-color: rgb(125, 247, 64);
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        transition: all .3s linear;
+        margin-left: 109px;
+        margin-bottom: 20px;
+        border: none;
+    }
+
+    .toTop {
+        right: 5px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .wrapper{
+        width:auto;
+    }
+
+    .section1{
+        margin-left:0;
+    }
+
+    .container .title-region{
+        /* border:1px solid red; */
+        padding-left:80px;
+    }
+
+    .form-region .detail-1 {
+        /* border: 1px solid red; */
+        font-size: 18px;
+        margin-right: 15px;
+        margin-left: 50px;
+        height: 50px;
+    }
+}

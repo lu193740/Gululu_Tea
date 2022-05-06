@@ -11,20 +11,33 @@ body{
 /* Ul li要加上nav */
 
 .wrapper{
-    width:100%;
+    width:1200px;
     margin:0 auto;
 }
 
 .top{
-    /* width: 100%; */
+    width: 100%;
     height:80px;
     background-color: rgb(255, 255, 255);
-    /* position: fixed; */
+    display: flex;
+    /* border:1px solid red; */
+    margin: 0 auto;
 }
 
-.top img{
+header{
+    display: flex;
+    z-index: 2;
+}
+
+.top .fa{
+    /* border:1px solid red; */
+    display:none;
+}
+
+.top img {
     width:150px;
     height:80px;
+    margin:0;
     /* border:1px solid red; */
 }
 
@@ -33,16 +46,18 @@ body{
 }
 
 .block-1{
-    /*border: 1px solid green;*/
-    float:right;
-    margin: 25px 50px;
+    /* border: 1px solid green; */
+    margin: 25px 0;
     list-style-type:none;
+    justify-content: flex-end;
+    position: relative;
+    left:470px;
 }
 
 .block-1 li{
     /* border: 1px solid red; */
     float:left;
-    padding-right: 30px;;
+    padding-right: 28px;;
     font-size:18px ;
 }
 
@@ -53,25 +68,65 @@ body{
 }
 
 .block-1 a{
+    /* border:1px solid red; */
     text-decoration: none;
+    display: block;
+    font-size: 18px;
 }
 
 .block-1 a:hover{
-    font-size: 20px;
     /* text-decoration: none; */
-    background-color: rgb(231, 255, 97);
     color:black;
+    text-decoration:underline;
 }
 
 
+.block-1 > li ol{
+    /* border:1px solid red; */
+    background-color: azure;
+    position: absolute;
+    display:none;
+    width:0px;
+}
+
+.block-1 > li:last-child:hover ol{
+    display:block;
+    position: relative;
+    /* right:50px; */
+}
+
+.block-1 li > ol li{
+    /* border:1px solid red; */
+    width:120px;
+    position: relative;
+    right:80px;
+    /* display: none; */
+}
+
+.block-1 li > ol li a{
+    /* border:1px solid red; */
+    background-color: rgb(223, 222, 222);
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+    text-align: center;
+}
+
 
 /* footer頁尾區塊 */
+.footer{
+    /* border:1px solid red; */
+    padding:0;
+    text-align:center;
+    margin: 0 auto;
+    
+}
+
 .footer-region{
     /* border:1px solid blue; */
-    width:100%;
     display: flex;
     padding: 20px 10px;
     background-color: #dbdbdb;
+    /* clear:both; */
 }
 
 .footer-region .logo-box img{
@@ -86,6 +141,7 @@ body{
     font-size: 18px;
     font-weight: 500;
     color:black;
+    text-align: left;
 }
 
 .footer-region .comtact-region li{
@@ -93,13 +149,19 @@ body{
     font-size: 14px;
     margin-right: 180px;
     line-height: 2.3;
+    text-align: left;
 }
+
+/* .footer-region .shear-region{
+    border:1px solid red;
+} */
 
 .footer-region .shear-region .icon-slogan{
     /* border:1px solid red; */
     color:rgb(0, 0, 0);
     font-size: 18px;
     font-weight: 500;
+    text-align: left;
 }
 
 .footer-region .shear-region ul{
@@ -117,6 +179,149 @@ body{
 
 .copyright-region{
     background-color: #dbdbdb;
-    padding-left: 55px;
+    padding-left: 20px;
+    /* width:100%; */
     color:#999999;
+    /* margin: 0 auto; */
+    /* clear:both; */
+}
+
+/* RWD區塊 */
+
+@media screen and (max-width: 414px){
+
+    .top{
+        /* border:1px solid red; */
+        width:auto;
+        height:80px;
+        position: relative;
+    }
+
+    .top a img {
+        margin-left: 10px;
+    }
+
+    .top .fa{
+        /* border:1px solid red; */
+        display:block;
+        float:right;
+        padding: 10px;
+        font-size: 60px;
+        margin-left: 160px;
+        /* margin-top:
+        margin-right: */
+    }
+
+
+    .top .block-1{
+        /* border:1px solid red; */
+        display: none;
+        z-index: 3;
+        background-color: rgb(202, 225, 194);
+        position: absolute;
+        right: 0;
+        top: 70px;
+        margin:0;
+        left:0;
+        /* width: 100%; */
+    } 
+
+    /* .top .fa:hover ~ .block-1{ */
+        /* border:1px solid red; */
+        /* display: block; */
+    /* } */
+
+    /* .top .block-1:hover{
+        display: block;
+    } */
+
+    .top .block-1 li{
+        /* border:1px solid red; */
+        float:none;
+        clear:both;
+        line-height: 50px;
+        border-bottom: 1px solid gray;
+        text-align: center;
+    }
+
+    .block-1 > li ol{
+        margin-left:200px;
+    }
+
+    .block-1 > li ol > li{
+        /* border:1px solid red; */
+        width:200px;
+    }
+
+    /* .block-1 > li:last-child:hover ol{
+        margin: 0 auto;
+    } */
+
+    .footer-region{
+        /* border:1px solid blue; */
+        display: flex;
+        padding: 20px 10px;
+        background-color: #dbdbdb;
+        flex-wrap: wrap;
+        /* clear:both; */
+    }
+
+    .footer-region .logo-box img{
+        /* display:none; */
+        width:70px;
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+    .footer-region .comtact-region .title {
+        /* border: 1px solid red; */
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+        text-align: left;
+        width: 55px;
+        margin-left: 20px;
+    }
+
+    .footer-region .comtact-region li {
+        /* border: 1px solid blue; */
+        font-size: 14px;
+        margin-right: 0;
+        line-height: 2.3;
+        text-align: left;
+        width: 250px;
+        margin-left: 20px;
+    }
+
+    .footer-region .shear-region .icon-slogan{
+        margin-left: 95px;
+    }
+
+    .footer-region .shear-region ul{
+        /* border:1px solid red; */
+        margin-left:10px;
+        margin-left:95px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .top{
+        /* border:1px solid red; */
+        width:auto;
+        height:80px;
+        position: relative;
+    }
+
+    .top a img {
+        margin-left: 10px;
+    }
+
+    .top .fa{
+        /* border:1px solid red; */
+        display:block;
+        float:right;
+        padding: 10px;
+        font-size: 60px;
+        margin-left: 150px;
+    }
 }

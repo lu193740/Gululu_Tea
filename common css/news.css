@@ -7,6 +7,11 @@ body{
     color: rgb(32, 30, 30);
 }
 
+.wrapper{
+    margin:0 auto;
+    width:1200px;
+}
+
 .section1{
     /* border:1px solid red; */
     margin-left:130px;
@@ -41,8 +46,6 @@ body{
     padding-bottom: 1px;
 }
 
-.block1 .item1 {}
-
 .block1 .item1 a{
     text-decoration: none;
     text-align: center;
@@ -67,8 +70,6 @@ body{
     font-size: 20px;
     margin-right:10px;
 }
-
-.block1 .item2{}
 
 .block1 .item2 a{
     text-decoration: none;
@@ -107,9 +108,8 @@ body{
     color:black;
 }
 
-.block2 .item3{
-    /* border:1px solid red; */
-}
+/* .block2 .item3{
+    /* border:1px solid red;} */
 
 .block2 .item3 img{
     /* border:1px solid red; */
@@ -127,9 +127,6 @@ body{
     position: relative;
     bottom:28px;
     margin-right: 13px;
-}
-
-.block2 .item4{
 }
 
 .block2 .item4 a{
@@ -155,4 +152,258 @@ body{
     position: relative;
     bottom:28px;
     margin-left: 6px;
+}
+
+/* 置頂按鈕區塊 */
+.toTop{
+    /* border:1px solid red; */
+	display: block;
+	width: 70px;
+	height: 70px;
+	background-color: rgb(179, 101, 0);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	right: 50px;
+	bottom: 60px;
+	text-decoration: none;
+	border-radius: 50%;
+	font-size: 2em;
+	transition: .3s;
+}
+
+.toTop .fa{
+	transition: .5s;
+}
+
+.toTop:hover{
+	background-color: #333;
+}
+
+.toTop:hover .fa{
+	transform: translateY(-5px);
+}
+
+/* RWD 撰寫區塊 */
+@media screen and (max-width: 414px) {
+    .wrapper{
+        width:auto;
+    }
+
+    .section1{
+        margin-left:0;
+    }
+
+    .container .title-region{
+        /* border:1px solid red; */
+        padding-left:80px;
+    }
+
+    .main{
+        /* border:1px solid red; */
+        width:395px;
+        margin: 0 auto;
+    }
+
+    .block1 .item1 img {
+        /* border: 1px solid red; */
+        width: 180px;
+        height: 180px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    .block1 .item1 .paragraph1 {
+        /* border: 1px solid red; */
+        position: relative;
+        background-color: rgb(221, 222, 223);
+        bottom: 18px;
+        font-size: 15px;
+        margin-left: 20px;
+        width: 180px;
+    }
+
+    .block1 .item2 img {
+        /* border: 1px solid red; */
+        width: 180px;
+        height: 180px;
+        margin-top: 20px;
+        margin-right: 0;
+        margin-bottom: 10px;
+        margin-left: 6px;
+    }
+
+    .block1 .item2 .paragraph2 {
+        /* border: 1px solid red; */
+        position: relative;
+        bottom: 17px;
+        background-color: rgb(221, 222, 223);
+        font-size: 15px;
+        margin-left: 6px;
+        width: 181px;
+    }
+
+    .block2 .item3 img {
+        /* border: 1px solid red; */
+        width: 180px;
+        height: 180px;
+        margin-top: 0;
+        margin-left: 20px;
+        margin-right: 14px;
+        margin-bottom: 21px;
+    }
+
+    .block2 .item3 .paragraph3 {
+        /* border: 1px solid red; */
+        font-size: 16px;
+        background-color: rgb(221, 222, 223);
+        position: relative;
+        bottom: 28px;
+        margin-left: 20px;
+        width: 180px;
+    }
+    .block2 .item4 img {
+        /* border: 1px solid red; */
+        width: 180px;
+        height: 180px;
+        margin-top: 0;
+        margin-right: 0px;
+        margin-bottom: 21px;
+        margin-left: 2px;
+    }
+
+    .block2 .item4 .paragraph4 {
+        /* border: 1px solid red; */
+        color: rgb(0, 0, 0);
+        background-color: rgb(221, 222, 223);
+        font-size: 16px;
+        position: relative;
+        bottom: 28px;
+        margin-left: 2px;
+        width: 180px;
+    }
+
+    .toTop {
+        right: 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 390px){
+    .wrapper{
+        width:auto;
+    }
+
+    .section1{
+        margin-left:0;
+    }
+
+    .container .title-region{
+        /* border:1px solid red; */
+        padding-left:60px;
+    }
+
+    .block1 {
+        /* border: 1px solid red; */
+        display: flex;
+        padding-bottom: 1px;
+        width: 380px;
+    }
+
+    .block1 .item1 img {
+        /* border: 1px solid red; */
+        width: 180px;
+        height: 180px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    .block1 .item1 .paragraph1 {
+        /* border: 1px solid red; */
+        position: relative;
+        background-color: rgb(221, 222, 223);
+        bottom: 18px;
+        font-size: 15px;
+        margin-left: 10px;
+        width: 180px;
+    }
+
+    .block1 .item2 img {
+        /* border: 1px solid red; */
+        width: 180px;
+        height: 180px;
+        margin-top: 20px;
+        margin-right: 0;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+
+    .block1 .item2 .paragraph2 {
+        /* border: 1px solid red; */
+        position: relative;
+        bottom: 17px;
+        background-color: rgb(221, 222, 223);
+        font-size: 15px;
+        margin-left: 0px;
+        width: 181px;
+    }
+
+    .block2 {
+        /* border: 1px solid red; */
+        display: flex;
+        margin-top: 0;
+        width: 380px;
+    }
+
+    .block2 .item3 img {
+        /* border: 1px solid red; */
+        width: 180px;
+        height: 180px;
+        margin-top: 0;
+        margin-left:10px;
+        margin-right: 0px;
+        margin-bottom: 21px;
+    }
+
+    .block2 .item3 .paragraph3 {
+        /* border: 1px solid red; */
+        font-size: 16px;
+        background-color: rgb(221, 222, 223);
+        position: relative;
+        bottom: 28px;
+        margin-left: 10px;
+        width: 180px;
+    }
+
+    .block2 .item4 img {
+        /* border: 1px solid red; */
+        width: 180px;
+        height: 180px;
+        margin-top: 0;
+        margin-right: 0px;
+        margin-bottom: 21px;
+        margin-left: 0px;
+    }
+
+    .block2 .item4 .paragraph4 {
+        /* border: 1px solid red; */
+        color: rgb(0, 0, 0);
+        background-color: rgb(221, 222, 223);
+        font-size: 16px;
+        position: relative;
+        bottom: 28px;
+        margin-left: 0px;
+        width: 180px;
+    }
+
+    .toTop {
+        right: 10px;
+    }
 }
