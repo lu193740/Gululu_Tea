@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gululu Tea 暢飲</title>
     <!-- <script src="jquery-3.3.1.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="common css/header footer common.css">
     <link rel="stylesheet" href="common css/brand story.css">
-    <script src="script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
-        .breadcrumb{
+        .breadcrumb {
             /* border:1px solid red; */
             background-color: #e9ecef;
             border-radius: 5px;
-            padding:5px 10px;
+            padding: 5px 10px;
         }
 
-        .breadcrumb ol.breadcrumb-list{
+        .breadcrumb ol.breadcrumb-list {
             /* border:1px solid red; */
             list-style: none;
         }
 
-        .breadcrumb ol.breadcrumb-list > li{
+        .breadcrumb ol.breadcrumb-list>li {
             /* border:1px solid red; */
-            display:inline-block;
+            display: inline-block;
             margin-right: 10px;
-            color:gray;
+            color: gray;
         }
 
-        .breadcrumb ol.breadcrumb-list > li::before{
-            content:"/";
-            color:#aaa;
-            margin-right:12px;
+        .breadcrumb ol.breadcrumb-list>li::before {
+            content: "/";
+            color: #aaa;
+            margin-right: 12px;
             /* border:1px solid gray; */
             font-size: 18px;
         }
 
-        .breadcrumb ol.breadcrumb-list > li:first-child::before{
-            content:"";
-            margin-right:0;
+        .breadcrumb ol.breadcrumb-list>li:first-child::before {
+            content: "";
+            margin-right: 0;
         }
 
-        .breadcrumb ol.breadcrumb-list > li > a{
+        .breadcrumb ol.breadcrumb-list>li>a {
             text-decoration: none;
             display: inline-block;
-            color:#007bff;
+            color: #007bff;
         }
 
-        .breadcrumb ol.breadcrumb-list > li > a:hover{
-            color:#0056b3;
+        .breadcrumb ol.breadcrumb-list>li>a:hover {
+            color: #0056b3;
         }
-
     </style>
 
 </head>
+
 <body>
     <div class="wrapper">
 
-       <!-- header 頁首區塊 -->
+        <!-- header 頁首區塊 -->
         <header>
             <div class="top">
                 <a href="index.html">
@@ -69,19 +71,19 @@
                 </a>
 
                 <i class="fa fa-bars" aria-hidden="true" id="ham"></i>
-        
+
                 <ul class="block-1">
-                  <li><a href="brand story.html">關於Gululu Tea</a></li>
-                  <li><a href="list.html">店內飲品</a></li>
-                  <li><a href="news.html">最新消息</a></li>
-                  <li><a href="contact us.html">聯絡我們</a></li>
-                  <li><a href="#"><img src="img/icon/ao520-821ka shop csr .svg" alt=""></a></li>
-                  <li><a href="#"><img src="img/icon/user .svg" alt=""></a>
-                    <ol>
-                        <li><a href="sign up.html">新會員註冊</a></li>
-                        <li><a href="Login page.html">會員登錄</a></li>
-                    </ol>
-                  </li>
+                    <li><a href="brand story.html">關於Gululu Tea</a></li>
+                    <li><a href="list.html">店內飲品</a></li>
+                    <li><a href="news.html">最新消息</a></li>
+                    <li><a href="contact us.html">聯絡我們</a></li>
+                    <li><a href="#"><img src="img/icon/ao520-821ka shop csr .svg" alt=""></a></li>
+                    <li><a href="#"><img src="img/icon/user .svg" alt=""></a>
+                        <ol>
+                            <li><a href="sign up.html">新會員註冊</a></li>
+                            <li><a href="Login page.html">會員登錄</a></li>
+                        </ol>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -96,101 +98,102 @@
 
 
 
-       <div class="section1">
-           <div class="container">
-               <!-- 大標部分 -->
-               <div class="title-region">
-                   品牌資訊 <div class="subtitle">Branding information</div>
-               </div>
+        <div class="section1">
+            <div class="container">
+                <!-- 大標部分 -->
+                <div class="title-region">
+                    品牌資訊 <div class="subtitle">Branding information</div>
+                </div>
 
-               <!-- 標題區塊 -->
-               <div class="solgen-region">
-                   <div class="paragraph1">Form tea leaf to tea</div>
-                   <div class="paragraph2">從一片茶葉，再到一杯茶</div>
-               </div>
+                <!-- 標題區塊 -->
+                <div class="solgen-region">
+                    <div class="paragraph1">Form tea leaf to tea</div>
+                    <div class="paragraph2">從一片茶葉，再到一杯茶</div>
+                </div>
 
-               <!-- 橫幅區塊一(左圖片、右文字) -->
-               <div class="banner1">
-                   <div>
-                       <img src="img/brand story/1996658_3fff8f585e0227af85d1d73b007f49d4_620.jpg" alt="">
+                <!-- 橫幅區塊一(左圖片、右文字) -->
+                <div class="banner1" data-aos="fade-right">
+                    <div>
+                        <img src="img/brand story/1996658_3fff8f585e0227af85d1d73b007f49d4_620.jpg" alt="">
                     </div>
-                   <div class="paragraph3">
+                    <div class="paragraph3">
                         <p>
-                           我們深知泡茶的各項細節與要素。<br>
-                           所以我們從撿茶、烘焙到沖泡，每一個細節都嚴格把關。<br>
-                           從一片茶葉到一杯茶，講究細節的製作流程，提供最美好的味覺體驗。
+                            我們深知泡茶的各項細節與要素。<br>
+                            所以我們從撿茶、烘焙到沖泡，每一個細節都嚴格把關。<br>
+                            從一片茶葉到一杯茶，講究細節的製作流程，提供最美好的味覺體驗。
                         </p>
-                   </div>
-               </div>
-
-               <!-- 大標區塊 -->
-               <div class="solgen-region2">
-                   <div class="paragraph4">Gululu Tea Core Values</div>
-                   <div class="paragraph5">我們的核心價值</div>
-               </div>
-
-               <!-- 橫幅區塊二(左文字、右圖片) -->
-               <div class="banner2">
-                   <div class="block1">
-                       <div class="big-title">堅持</div>
-                        <div class="paragraph6"><p>從採茶到製茶，是一個漫長費工的過程，<br>但我們嚴守原則，每一道工法徹底履行。
-                             在採集新葉後，<br>等待發酵慢醒，並佐以各式程度的烘焙，萃取出不同口感的熟成茶。不同口感的熟成茶。</p>
-                        </div>
-                   </div>
-                   <div>
-                       <img src="img/brand story/6053AA1CE15AE1616095772.jpeg" alt="">
-                   </div> 
-               </div>
-
-               <!-- 該區塊用來作線條 -->
-               <div class="line-region"> 
-               </div>
-
-               <!-- 橫幅區塊三(左圖片、右文字) -->
-               <div class="banner3">
-                   <div>
-                       <img src="img/brand story/201910042659d14d-f051-40eb-bd33-1a3dcfb9d27d.jpeg" alt="">
-                   </div>
-                   <div class="block2">
-                      <div class="big-title2">
-                         新鮮
-                      </div>
-                      <div class="paragraph7">
-                         <p>
-                         茶葉發酵後，以程度而論有輕熟、半熟、完熟之分，<br>以不同程度的發酵帶來不同程度的體驗。
-                         最終，譜出不苦不澀的極品原茶，體驗大自然的原汁原味。
-                        </p>
-                      </div>
                     </div>
-               </div>
-               
-               <!-- 該區塊用來作線條 -->
-               <div class="line-region">
-               </div>
+                </div>
 
-               <!-- 橫幅區塊四(左文字、右圖片) -->
-               <div class="banner4">
-                   <div class="block3">
-                       <div class="big-title3">服務</div>
-                       <div class="paragraph8">
-                          <p>
-                            當您想要品嘗一杯美味的茶時，<br>
-                            來到本店，<br>
-                            即刻享有這份美好幸福。
-                          </p>
-                       </div>
-                   </div>
-                   <div>
-                       <img src="img/brand story/article-5c781f8e58433.jpeg" alt="">
-                   </div>
-               </div>
+                <!-- 大標區塊 -->
+                <div class="solgen-region2">
+                    <div class="paragraph4">Gululu Tea Core Values</div>
+                    <div class="paragraph5">我們的核心價值</div>
+                </div>
+
+                <!-- 橫幅區塊二(左文字、右圖片) -->
+                <div class="banner2" data-aos="fade-up">
+                    <div class="block1">
+                        <div class="big-title">堅持</div>
+                        <div class="paragraph6">
+                            <p>從採茶到製茶，是一個漫長費工的過程，<br>但我們嚴守原則，每一道工法徹底履行。
+                                在採集新葉後，<br>等待發酵慢醒，並佐以各式程度的烘焙，萃取出不同口感的熟成茶。不同口感的熟成茶。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/brand story/6053AA1CE15AE1616095772.jpeg" alt="">
+                    </div>
+                </div>
+
+                <!-- 該區塊用來作線條 -->
+                <div class="line-region">
+                </div>
+
+                <!-- 橫幅區塊三(左圖片、右文字) -->
+                <div class="banner3" data-aos="fade-right">
+                    <div>
+                        <img src="img/brand story/201910042659d14d-f051-40eb-bd33-1a3dcfb9d27d.jpeg" alt="">
+                    </div>
+                    <div class="block2">
+                        <div class="big-title2">
+                            新鮮
+                        </div>
+                        <div class="paragraph7">
+                            <p>
+                                茶葉發酵後，以程度而論有輕熟、半熟、完熟之分，<br>以不同程度的發酵帶來不同程度的體驗。
+                                最終，譜出不苦不澀的極品原茶，體驗大自然的原汁原味。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 該區塊用來作線條 -->
+                <div class="line-region">
+                </div>
+
+                <!-- 橫幅區塊四(左文字、右圖片) -->
+                <div class="banner4" data-aos="fade-left">
+                    <div class="block3">
+                        <div class="big-title3">服務</div>
+                        <div class="paragraph8">
+                            <p>
+                                當您想要品嘗一杯美味的茶時，<br>
+                                來到本店，<br>
+                                即刻享有這份美好幸福。
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/brand story/article-5c781f8e58433.jpeg" alt="">
+                    </div>
+                </div>
             </div>
-       </div>
+        </div>
 
 
 
-         <!-- 置頂按鈕 -->
-         <a href="#" class="toTop">
+        <!-- 置頂按鈕 -->
+        <a href="#" class="toTop">
             <i class="fa fa-angle-double-up" aria-hidden="true"></i>
         </a>
 
@@ -198,32 +201,35 @@
     <!-- footer 頁尾區塊 -->
     <footer class="footer">
         <div class="footer-region">
-          <div class="logo-box">
-            <img src="img/logo/資產 6.svg" alt="">
-         </div>
-        <div class="comtact-region">
-            <div class="title">總公司</div>
-                         <ul>
-                           <li>地址: 新北市新店區北新路16號1樓</li>
-                           <li>電話: 02-8873-1168  (周一~周六 09:00-18:00)</li>
-                           <li>Mail: wellcome@gululu.com</li>
-                         </ul>
-                    </div>
-                    <div class="shear-region">
-                        <div class="icon-slogan">我們的社群</div>
-                       <ul>
-                         <!-- <li class="title">我們的社群</li> -->
-                         <li> <a href="https://zh-tw.facebook.com/"><img src="img/icon/facebook icon.svg" alt=""> </a></li>
-                         <li> <a href="https://www.instagram.com/"><img src="img/icon/IG icon.svg" alt=""></a></li>
-                         <li> <a href="https://tw.linkedin.com/"><img src="img/icon/likedin icon.svg" alt=""></a></li>
-                       </ul>
-                    </div>
-             </div>
-             <div class="copyright-region">
-                 <div>
-                     <div>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。</div>
-                 </div>
-             </div>
-            </footer>
+            <div class="logo-box">
+                <img src="img/logo/資產 6.svg" alt="">
+            </div>
+            <div class="comtact-region">
+                <div class="title">總公司</div>
+                <ul>
+                    <li>地址: 新北市新店區北新路16號1樓</li>
+                    <li>電話: 02-8873-1168 (周一~周六 09:00-18:00)</li>
+                    <li>Mail: wellcome@gululu.com</li>
+                </ul>
+            </div>
+            <div class="shear-region">
+                <div class="icon-slogan">我們的社群</div>
+                <ul>
+                    <!-- <li class="title">我們的社群</li> -->
+                    <li> <a href="https://zh-tw.facebook.com/"><img src="img/icon/facebook icon.svg" alt=""> </a></li>
+                    <li> <a href="https://www.instagram.com/"><img src="img/icon/IG icon.svg" alt=""></a></li>
+                    <li> <a href="https://tw.linkedin.com/"><img src="img/icon/likedin icon.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-region">
+            <div>
+                <div>本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。</div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

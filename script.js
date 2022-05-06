@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
   $('#ham').click(function () {
-    $('.block-1').toggle(300);
+    $('.block-1').toggle();
   })
 })
 
@@ -84,9 +84,10 @@ $(function(){
   })
 })
 
-
 // 捲動整個網頁，要用html和body，不是用window，因為這兩項標籤是網頁的最外層。
 // 由於jq特效是動畫，所以寫上animate({},1000)  1000代表一秒的時間
 // scrolltop是動畫屬性，值得議題得是該屬性不在css內
 // scrolltop:100，表示移動到100的位置，200表示移動到200的位置。
-// 
+
+
+AOS.init();
