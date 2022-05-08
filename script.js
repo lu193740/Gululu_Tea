@@ -2,10 +2,9 @@
 $(document).ready(function () {
 
   $('#ham').click(function () {
-    $('.block-1').toggle();
+    $('.block-1').toggle(300);
   })
 })
-
 
 // 這是放大鏡效果的JS寫法
 function zoom_in(e){
@@ -76,6 +75,8 @@ $(function(){
   })
 })
 
+
+
 // 其他頁面的置頂按鈕
 $(function(){
   $('.toTop').click(function(){
@@ -83,7 +84,6 @@ $(function(){
     return false
   })
 })
-
 // 捲動整個網頁，要用html和body，不是用window，因為這兩項標籤是網頁的最外層。
 // 由於jq特效是動畫，所以寫上animate({},1000)  1000代表一秒的時間
 // scrolltop是動畫屬性，值得議題得是該屬性不在css內
@@ -91,3 +91,33 @@ $(function(){
 
 
 AOS.init();
+
+
+
+// 圖片輪播的jquery
+$(function () {
+  let divWidth = $('#sliderBoard').width();
+  let imgCount = $('#content li').length;  
+
+  for(let i = 0; i < imgCount; i++){
+      $('#contentButton').append('<li></li>')
+  }
+  $('#contentButton li:nth-child(1)').addClass('clickMe')
+
+  $('#content').width(divWidth * imgCount)
+  $('#content li').width(divWidth)
+
+  let index;
+  $('#contentButton li').click(function(){
+      // alert($(this).index())
+      index = $(this).index()
+
+      $('#content').animate({
+          left: divWidth * index * -1,
+      })
+
+      $(this).addClass('clickMe')
+      $('#contentButton li').not(this).removeClass('clickMe')
+  })
+});
+

@@ -559,13 +559,37 @@ body{
         height: auto;
     }
 
+    .banner1 {
+        /* border: 1px solid green; */
+        background-image: url(../img/index/20210421006131.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 360px;
+        width: 100%;
+        height: 359px;
+        transition: all .5s;
+    }
+
+    .banner1 .text {
+        /* border: 1px solid rgb(0, 0, 0); */
+        font-size: 24px;
+        font-weight: 700;
+        text-align: left;
+        padding-top: 315px;
+        padding-left: 10px;
+        color: white;
+    }
+
+    .test {
+        height: 365px;
+    }
+
     .banner2 {
         /* border: 1px solid blue; */
         background-image: url(../img/index/taiwan-milk-tea-with-bubble_1339-934301838340.jpeg);
         background-repeat: no-repeat;
-        background-size: 370px 210px;
+        background-size: 100% 210px;
         margin: 0 5px 5px 0px;
-        width: 370px;
+        width: 100%;
         height: 210px;
         transition: all .5s;
     }
@@ -584,8 +608,8 @@ body{
         background-image: url(../img/index/20200609004676.jpg);
         margin: 0 0px 10px 0px;
         background-repeat: no-repeat;
-        background-size: 370px 210px;
-        width: 370px;
+        background-size: 100% 210px;
+        width: 100%;
         height: 210px;
         object-fit: cover;
         transition: all .5s;
@@ -604,9 +628,9 @@ body{
     /* border: 1px solid red; */
     background-image: url(../img/index/tea-picker-woman-s-asian-hands-close-up-pretty-tea-picking-girl-plantation.jpg);
     background-repeat: no-repeat;
-    background-size: 370px 210px;
+    background-size: 100% 210px;
     margin: 0 0px 5px 0px;
-    width: 370px;
+    width: 100%;
     height: 210px;
     transition: all .5s;
 }
@@ -624,9 +648,9 @@ body{
         /* border: 1px solid red; */
         background-image: url(../img/contactus/Contact-us.jpg);
         background-repeat: no-repeat;
-        background-size: 380px 210px;
+        background-size: 100% 210px;
         margin: 0 0px 10px 0px;
-        width: 370px;
+        width: 100%;
         height: 210px;
         transition: all .5s;
     }
@@ -637,5 +661,9 @@ body{
         padding-top: 160px;
         padding-left: 10px;
         color: white;
+    }
+
+    .toTop {
+        right: 5px;
     }
 }

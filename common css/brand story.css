@@ -1,5 +1,9 @@
 @import url('reset.css');
 
+html, body{
+    overflow-x: hidden;
+}
+
 body{
     font-family: verdana;
     line-height: 1.6;
@@ -54,6 +58,53 @@ body{
     font-weight: 600;
     margin-bottom: 50px;
 }
+
+/* 這裡是圖片輪播的CSS撰寫區塊 */
+.image{
+    /* border:1px solid red; */
+    width:100%;
+    height:550px;
+}
+
+#sliderBoard {
+    border:1px solid #ccc;
+    width:60%;
+    height:600px;
+    margin:50px auto;
+    overflow:hidden;
+}
+
+#content{
+    position: relative;
+}
+
+#content li{
+    /* border:1px solid red; */
+    float:left;
+}
+
+#contentButton{
+    text-align: center;
+    width:100%;
+    height:50px;
+}
+
+#contentButton li{
+    width:20px;
+    height:20px;
+    margin: 6px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: inline-block;
+}
+
+#contentButton li.clickbtn{
+    background-color: #888;
+}
+
+
+/* 圖片輪播 */
+
 
 .container .banner1{
     /* border:1px solid red; */
@@ -258,6 +309,38 @@ body{
         font-weight: 500;
     }
 
+    /* 圖片輪播區塊 */
+
+    .image{
+        display: none;
+    }
+    
+    #sliderBoard {
+        display: none;
+    }
+    
+    #content{
+        display: none;
+    }
+    
+    #content li{
+        /* border:1px solid red; */
+        display: none;
+    }
+    
+    #contentButton{
+        display: none;
+    }
+    
+    #contentButton li{
+        display: none;
+    }
+    
+    #contentButton li.clickbtn{
+        display: none;
+    }
+    
+
     .solgen-region .paragraph1 {
         /* border: 1px solid red; */
         font-size: 30px;
@@ -401,12 +484,204 @@ body{
     }
 
     .toTop {
-        right: 5px;
+        right: 20px;
     }
 }
 
 @media screen and (max-width: 390px){
+        .wrapper{
+            width:auto;
+        }
+    
+        .section1{
+            margin-left:0;
+        }
+    
+        .container .title-region{
+            /* border:1px solid red; */
+            padding-left:30px;
+            font-size: 29px;
+            display: flex;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            font-weight: 500;
+        }
+    
+        /* 圖片輪播區塊 */
+    
+        .image{
+            display: none;
+        }
+        
+        #sliderBoard {
+            display: none;
+        }
+        
+        #content{
+            display: none;
+        }
+        
+        #content li{
+            /* border:1px solid red; */
+            display: none;
+        }
+        
+        #contentButton{
+            display: none;
+        }
+        
+        #contentButton li{
+            display: none;
+        }
+        
+        #contentButton li.clickbtn{
+            display: none;
+        }
+        
+    
+        .solgen-region .paragraph1 {
+            /* border: 1px solid red; */
+            font-size: 30px;
+            font-weight: 500;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: rgb(192, 170, 0);
+        }
+    
+        .container .banner1 {
+            /* border: 1px solid red; */
+            display: flex;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+    
+        .container .banner2 .block1 .big-title {
+            /* border: 1px solid red; */
+            font-size: 24px;
+            font-weight: 600;
+            margin-left: 180px;
+        }
+    
+        .container .banner1 img {
+            /* border: 1px solid red; */
+            width: 354px;
+            height: auto;
+            margin-right: 24px;
+            margin-left: 22px;
+        }
+    
+        .container .banner1 .paragraph3 {
+            /* border: 1px solid red; */
+            text-align: left;
+            padding-top: 30px;
+            font-size: 18px;
+            margin-right: 10px;
+            margin-left: 35px;
+        }
+    
+        .solgen-region2 .paragraph5 {
+            /* border: 1px solid red; */
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    
+        .container .banner2 {
+            /* border: 1px solid red; */
+            display: inline-block; 
+            width: 390px;
+        }
+    
+        .container .banner2 .block1 .big-title {
+            /* border: 1px solid red; */
+            font-size: 24px;
+            font-weight: 600;
+            /* text-align: center; */
+            margin-left: 0;
+            padding-right: 0;
+        }
+    
+        .container .banner2 .block1 .paragraph6 {
+            /* border: 1px solid red; */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 31px;
+            padding-right: 20px;
+        }
+    
+        .container .banner2 img {
+            /* border: 1px solid red; */
+            width: 354px;
+            height: auto;
+            margin-right: 0px;
+            margin-left: 14px;
+        }
+    
+        .container .line-region{
+            display:none;
+        }
+    
+        .container .banner3 {
+            /* border: 1px solid red; */
+             display: inline-block;
+        }
+    
+        .container .banner3 img {
+            /* border: 1px solid red; */
+            width: 354px;
+            height: 235px;
+            margin-left: 15px;
+        }
+    
+        .container .banner3 .block2 {
+            /* border: 1px solid red; */
+            padding-top: 15px;
+            text-align: left;
+            font-size: 18px;
+            margin-left: 0px;
+        }
+    
+        .container .banner4 {
+            /* border: 1px solid red; */
+            display: inline-block; 
+            width: 400px;
+        }
+    
+        .container .banner4 .block3 {
+            /* border: 1px solid red; */
+            padding-top: 50px;
+            text-align: center;
+            font-size: 18px;
+            width: 395px;
+            margin-left: 0;
+        }
+    
+        .container .banner4 .block3 .big-title3 {
+            /* border: 1px solid red; */
+            font-size: 24px;
+            font-weight: 600;
+            margin-right: 0;
+        }
+    
+        .container .banner4 img {
+            /* border: 1px solid red; */
+            width: 375px;
+            height: auto;
+            margin-left: 13px;
+            margin-bottom: 50px;
+            margin-right:0;
+        }
+    
+        .container .banner4 .block3 .paragraph8 {
+            /* border: 1px solid red; */
+            margin-left: 70px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin: 10px px;
+            text-align: left;
+        }
+
     .toTop {
-        right: 15px;
+        right: 20px;
     }
 }
