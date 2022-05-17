@@ -99,7 +99,7 @@ header{
     /* border:1px solid red; */
     width:120px;
     position: relative;
-    right:80px;
+    /* right:80px; */
     /* display: none; */
 }
 
@@ -242,15 +242,24 @@ header{
         line-height: 50px;
         border-bottom: 1px solid gray;
         text-align: center;
+        right:80px;
     }
 
     .block-1 > li ol{
-        margin-left:200px;
+        margin-left:80px;
     }
 
     .block-1 > li ol > li{
         /* border:1px solid red; */
         width:200px;
+    }
+
+    .block-1 li > ol li a{
+        background-color: rgb(223, 222, 222);
+        width: 412px;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: center;
     }
 
     /* .block-1 > li:last-child:hover ol{
