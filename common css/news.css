@@ -158,8 +158,8 @@ body{
 .toTop{
     /* border:1px solid red; */
 	display: block;
-	width: 70px;
-	height: 70px;
+	width: 50px;
+    height: 50px;
 	background-color: rgb(179, 101, 0);
 	color: white;
 	display: flex;
@@ -169,7 +169,7 @@ body{
 	right: 50px;
 	bottom: 60px;
 	text-decoration: none;
-	border-radius: 50%;
+	border-radius: 10px;
 	font-size: 2em;
 	transition: .3s;
 }

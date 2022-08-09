@@ -6,6 +6,7 @@ $(document).ready(function () {
   })
 })
 
+
 // 這是放大鏡效果的JS寫法
 function zoom_in(e){
   // console.log(e);
