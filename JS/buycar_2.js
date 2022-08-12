@@ -106,7 +106,7 @@ function deleteItem(e){
     // e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode)
     newTable.removeChild(e.target.parentNode.parentNode)
 }
-function changeItemCount(){
-    alert('這是作業')
-}
+// function changeItemCount(){
+//     alert('這是作業')
+// }
 window.addEventListener('load', doFirst);

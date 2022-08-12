@@ -18,7 +18,7 @@ function doFirst(){
     }
 }
 function addItem(itemId,itemValue){
-    alert(`${itemId}: ${itemValue}`)
+    // alert(`${itemId}: ${itemValue}`)
     let image = document.createElement('img')
     image.src = 'img/index/' + itemValue.split('|')[1]
 
