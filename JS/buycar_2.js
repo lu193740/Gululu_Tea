@@ -88,6 +88,7 @@ function createCartList(itemId,itemValue){
     tdItemCount.appendChild(pItemCount)
     trItemList.appendChild(tdItemCount)
 }
+
 function deleteItem(e){
     let itemId = e.target.parentNode.id
 
@@ -106,7 +107,21 @@ function deleteItem(e){
     // e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode)
     newTable.removeChild(e.target.parentNode.parentNode)
 }
-// function changeItemCount(){
-//     alert('這是作業')
-// }
+
+function changeItemCount(e){
+   let itemId =  e.target.parentNode.parentNode.previousElementSibling.previousElementSibling.id;
+   let itemValue = storage.getItem(itemId)
+// console.log(e.target.value)
+// console.log(e.target.parentNode.parentNode.previousElementSibling.previousElementSibling.id)
+   let original_price = parseInt(e.target.parentNode.parentNode.previousElementSibling.querySelector("p").innerText);
+   let new_price = parseInt(itemValue.split("|")[2])*e.target.value;
+
+   total += (new_price - original_price);
+   document.getElementById('total').innerText = total;
+   e.target.parentNode.parentNode.previousElementSibling.querySelector('p').innerText = new_price;
+
+
+
+}
+
 window.addEventListener('load', doFirst);
