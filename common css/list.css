@@ -124,13 +124,13 @@ body{
 .tea-list1 .product1 .shop-btn{
     /* border: 1px solid rgb(0, 0, 0); */
     background-color: rgb(115, 255, 94);
-    width:75px;
-    height:30px;
+    width: 90px;
+    height: 30px;
     font-size: 16px;
     text-align: center;
     position: relative;
-    left:135px;
-    bottom:35px;
+    left: 125px;
+    bottom: 35px;
 }
 
 /* 菜單區塊二 */
@@ -200,13 +200,13 @@ body{
 .tea-list2 .product1 .shop-btn{
     /* border: 1px solid rgb(0, 0, 0); */
     background-color: rgb(115, 255, 94);
-    width:75px;
-    height:30px;
+    width: 90px;
+    height: 30px;
     font-size: 16px;
     text-align: center;
     position: relative;
-    left:135px;
-    bottom:35px;
+    left: 125px;
+    bottom: 35px;
 }
 
 /* 菜單區塊三 */
@@ -277,13 +277,13 @@ body{
 .tea-list3 .product1 .shop-btn{
     /* border: 1px solid rgb(0, 0, 0); */
     background-color: rgb(115, 255, 94);
-    width:75px;
-    height:30px;
+    width: 90px;
+    height: 30px;
     font-size: 16px;
     text-align: center;
     position: relative;
-    left:135px;
-    bottom:35px;
+    left: 125px;
+    bottom: 35px;
 }
 
 /* 置頂按鈕區塊 */
@@ -404,13 +404,13 @@ body{
     .tea-list1 .product1 .shop-btn {
         /* border: 1px solid rgb(0, 0, 0); */
         background-color: rgb(115, 255, 94);
-        width: 70px;
+        width: 90px;
         height: 30px;
         font-size: 16px;
         text-align: center;
         position: relative;
-        left: 90px;
-        bottom: 29px;
+        left: 75px;
+        bottom: 2px;
     }
 
     /* 菜單區塊二 */
@@ -455,13 +455,13 @@ body{
     .tea-list2 .product1 .shop-btn {
         /* border: 1px solid rgb(0, 0, 0); */
         background-color: rgb(115, 255, 94);
-        width: 70px;
+        width: 90px;
         height: 30px;
         font-size: 16px;
         text-align: center;
         position: relative;
-        left: 95px;
-        bottom: 33px;
+        left: 75px;
+        bottom: 2px;
     }
 
     /* 菜單區塊三 */
@@ -505,13 +505,13 @@ body{
     .tea-list3 .product1 .shop-btn {
         /* border: 1px solid rgb(0, 0, 0); */
         background-color: rgb(115, 255, 94);
-        width: 75px;
+        width: 90px;
         height: 30px;
         font-size: 16px;
         text-align: center;
         position: relative;
-        left: 90px;
-        bottom: 29px;
+        left: 75px;
+        bottom: 2px;
     }
 
     .toTop {

@@ -99,7 +99,7 @@ header{
     /* border:1px solid red; */
     width:120px;
     position: relative;
-    /* right:80px; */
+    right:60px;
     /* display: none; */
 }
 
@@ -186,9 +186,14 @@ header{
     /* clear:both; */
 }
 
-/* RWD區塊 */
 
+/* RWD區塊 */
 @media screen and (max-width: 414px){
+
+    .wrapper {
+        width: 413px;
+        margin: 0 auto;
+    }
 
     .top{
         /* border:1px solid red; */
@@ -242,11 +247,11 @@ header{
         line-height: 50px;
         border-bottom: 1px solid gray;
         text-align: center;
-        right:80px;
+        right: 97px;;
     }
 
     .block-1 > li ol{
-        margin-left:80px;
+        margin-left:177px;
     }
 
     .block-1 > li ol > li{
@@ -262,9 +267,11 @@ header{
         text-align: center;
     }
 
-    /* .block-1 > li:last-child:hover ol{
-        margin: 0 auto;
-    } */
+    .block-1 > li:last-child:hover ol{
+        display:block;
+        position: relative;
+        right:97px;
+    }
 
     .footer-region{
         /* border:1px solid blue; */
