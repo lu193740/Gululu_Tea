@@ -31,6 +31,20 @@ td{
     color: Maroon;
 }
 
+.gotopay{
+    width:140px;
+    height:40px;
+    border: 3px solid rgb(79 158 255);
+    cursor: pointer;
+    transition: all .3s linear;
+    border-radius: 5px;
+    margin-left: 911px;
+}
+
+.gotopay:hover{
+    background-color: rgb(89, 191, 255);
+    color: #fff;
+}
 /* @media screen and(max-width:414px) {
 
     #myCart {

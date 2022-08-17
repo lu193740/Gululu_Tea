@@ -120,8 +120,6 @@ function changeItemCount(e){
    document.getElementById('total').innerText = total;
    e.target.parentNode.parentNode.previousElementSibling.querySelector('p').innerText = new_price;
 
-
-
 }
 
 window.addEventListener('load', doFirst);

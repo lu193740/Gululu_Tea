@@ -7,6 +7,7 @@ $(document).ready(function () {
 })
 
 
+
 // 這是放大鏡效果的JS寫法
 function zoom_in(e) {
   // console.log(e);
@@ -17,6 +18,7 @@ function zoom_in(e) {
     overlay_el.style.backgroundImage = `url("${img_zoom_el.src}")`;
   }
 
+  //e.offsetX可以取得游標在籃框的行距，同理e.offsetY也是如此。
   overlay_el.style.backgroundPosition = `${overlay_el.clientWidth / 2 - e.offsetX * 2}px ${overlay_el.clientHeight / 2 - e.offsetY * 2}px`;
 
   overlay_el.classList.add("-on");
@@ -28,6 +30,8 @@ function zoom_out() {
   document.getElementById("overlay").classList.remove("-on");
 }
 
+//zoom_event是函式名稱，該函是在事件監聽"load"發生後會被啟動
+//把圖片標籤抓出來，用img_zoom
 function zoom_event() {
   let img_zoom_el = document.getElementById("img_zoom");
 
@@ -47,6 +51,7 @@ window.addEventListener("load", function () {
 window.addEventListener("resize", function () {
   zoom_event();
 });
+
 
 
 // 置頂按鈕的js寫法(list頁面部分)
@@ -87,7 +92,7 @@ $(function () {
 })
 // 捲動整個網頁，要用html和body，不是用window，因為這兩項標籤是網頁的最外層。
 // 由於jq特效是動畫，所以寫上animate({},1000)  1000代表一秒的時間
-// scrolltop是動畫屬性，值得議題得是該屬性不在css內
+// scrolltop是動畫屬性，值得一提得是該屬性不在css內
 // scrolltop:100，表示移動到100的位置，200表示移動到200的位置。
 
 

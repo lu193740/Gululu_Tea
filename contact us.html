@@ -100,13 +100,13 @@
             
             <div class="form-region">
                 <!-- Form表單 -->
-                <form action="#" method="post" name="#">
+                <form action="./PHP/contactus_output.php" method="post" name="#">
                   <!-- 聯絡目的 -->
                   <label for="" class="purpose1">聯絡目的:</label>
-                  <select name="" class="purpose2">
-                    <option value="#">客戶服務</option>
-                    <option value="#">線上加盟</option>
-                    <option value="#">團體採購</option>
+                  <select name="purpose3" class="purpose2">
+                    <option value="1">客戶服務</option>
+                    <option value="2">線上加盟</option>
+                    <option value="3">團體採購</option>
                   </select>
 
                   <div class="block1">
@@ -120,15 +120,15 @@
                   </div>
                   <!-- 主旨 -->
                   <label for="" class="subject1">聯絡主旨:</label>
-                  <input type="text" placeholder="請輸入主旨" class="subject2">
+                  <input type="text" name="text" placeholder="請輸入主旨" class="subject2">
                   <br>
                   <!-- 內容 -->
                   <div class="detail">
                   <label for="" class="detail-1">內容:</label>
-                  <textarea name="" id="" cols="30" rows="10" placeholder="請詳細說明" class="detail-2"></textarea>
+                  <textarea name="write" id="" cols="30" rows="10" placeholder="請詳細說明" class="detail-2"></textarea>
                   </div>
                   <!-- 傳送按鈕 -->
-                  <input type="button" name="#" value="提交" class="submit-btn">
+                  <input type="submit" name="#" value="提交" class="submit-btn">
                 </form>
             </div>
          </div>
